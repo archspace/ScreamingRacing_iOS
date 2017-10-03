@@ -13,6 +13,8 @@
 		11357B931F8357C20047FBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11357B921F8357C20047FBCC /* Assets.xcassets */; };
 		11357B961F8357C20047FBCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11357B941F8357C20047FBCC /* LaunchScreen.storyboard */; };
 		11357BA11F8357C20047FBCC /* ScreamingRacing_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11357BA01F8357C20047FBCC /* ScreamingRacing_iOSTests.swift */; };
+		2B1E9EB7EB35D23071290093 /* Pods_ScreamingRacing_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3187CD3B1EB0E4423A24160F /* Pods_ScreamingRacing_iOS.framework */; };
+		F02B7A02C95CE06044F408BC /* Pods_ScreamingRacing_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4B43FC72E53702DA4640AD /* Pods_ScreamingRacing_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		088598A56608AD1A5A7A6D71 /* Pods-ScreamingRacing_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamingRacing_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamingRacing_iOSTests/Pods-ScreamingRacing_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		11357B881F8357C20047FBCC /* ScreamingRacing_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamingRacing_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11357B8B1F8357C20047FBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11357B8D1F8357C20047FBCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		11357B9C1F8357C20047FBCC /* ScreamingRacing_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreamingRacing_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11357BA01F8357C20047FBCC /* ScreamingRacing_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamingRacing_iOSTests.swift; sourceTree = "<group>"; };
 		11357BA21F8357C20047FBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22AF241DEB76AB3D8BACA974 /* Pods-ScreamingRacing_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamingRacing_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2B4B43FC72E53702DA4640AD /* Pods_ScreamingRacing_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3187CD3B1EB0E4423A24160F /* Pods_ScreamingRacing_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A74A5A10AC92CD06770EEF /* Pods-ScreamingRacing_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamingRacing_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9D85F45D409EAF795C85DBF8 /* Pods-ScreamingRacing_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamingRacing_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamingRacing_iOSTests/Pods-ScreamingRacing_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1E9EB7EB35D23071290093 /* Pods_ScreamingRacing_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02B7A02C95CE06044F408BC /* Pods_ScreamingRacing_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F72711E689A4DF201B13EE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3187CD3B1EB0E4423A24160F /* Pods_ScreamingRacing_iOS.framework */,
+				2B4B43FC72E53702DA4640AD /* Pods_ScreamingRacing_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		11357B7F1F8357C20047FBCC = {
 			isa = PBXGroup;
 			children = (
 				11357B8A1F8357C20047FBCC /* ScreamingRacing_iOS */,
 				11357B9F1F8357C20047FBCC /* ScreamingRacing_iOSTests */,
 				11357B891F8357C20047FBCC /* Products */,
+				CA9212FF177A2827D9CE46F5 /* Pods */,
+				0F72711E689A4DF201B13EE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +117,17 @@
 			path = ScreamingRacing_iOSTests;
 			sourceTree = "<group>";
 		};
+		CA9212FF177A2827D9CE46F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22AF241DEB76AB3D8BACA974 /* Pods-ScreamingRacing_iOS.debug.xcconfig */,
+				61A74A5A10AC92CD06770EEF /* Pods-ScreamingRacing_iOS.release.xcconfig */,
+				088598A56608AD1A5A7A6D71 /* Pods-ScreamingRacing_iOSTests.debug.xcconfig */,
+				9D85F45D409EAF795C85DBF8 /* Pods-ScreamingRacing_iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11357BA51F8357C20047FBCC /* Build configuration list for PBXNativeTarget "ScreamingRacing_iOS" */;
 			buildPhases = (
+				ECED04B24758A75BA9E7AB25 /* [CP] Check Pods Manifest.lock */,
 				11357B841F8357C20047FBCC /* Sources */,
 				11357B851F8357C20047FBCC /* Frameworks */,
 				11357B861F8357C20047FBCC /* Resources */,
+				D56005494E774887C8B3C2E4 /* [CP] Embed Pods Frameworks */,
+				41456F7AA7EE984A55466FF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11357BA81F8357C20047FBCC /* Build configuration list for PBXNativeTarget "ScreamingRacing_iOSTests" */;
 			buildPhases = (
+				2A95634B8B8127459AC8F1C3 /* [CP] Check Pods Manifest.lock */,
 				11357B981F8357C20047FBCC /* Sources */,
 				11357B991F8357C20047FBCC /* Frameworks */,
 				11357B9A1F8357C20047FBCC /* Resources */,
+				7E221C068B65E2C198FDFB6F /* [CP] Embed Pods Frameworks */,
+				A0120CADA68B41365C51E64A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A95634B8B8127459AC8F1C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		41456F7AA7EE984A55466FF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E221C068B65E2C198FDFB6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScreamingRacing_iOSTests/Pods-ScreamingRacing_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0120CADA68B41365C51E64A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScreamingRacing_iOSTests/Pods-ScreamingRacing_iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56005494E774887C8B3C2E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECED04B24758A75BA9E7AB25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11357B841F8357C20047FBCC /* Sources */ = {
@@ -351,11 +482,13 @@
 		};
 		11357BA61F8357C20047FBCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22AF241DEB76AB3D8BACA974 /* Pods-ScreamingRacing_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NU3ZHCB55N;
 				INFOPLIST_FILE = ScreamingRacing_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chaotang-chang.ScreamingRacing-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,11 +499,13 @@
 		};
 		11357BA71F8357C20047FBCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61A74A5A10AC92CD06770EEF /* Pods-ScreamingRacing_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NU3ZHCB55N;
 				INFOPLIST_FILE = ScreamingRacing_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chaotang-chang.ScreamingRacing-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,6 +516,7 @@
 		};
 		11357BA91F8357C20047FBCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088598A56608AD1A5A7A6D71 /* Pods-ScreamingRacing_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +534,7 @@
 		};
 		11357BAA1F8357C20047FBCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D85F45D409EAF795C85DBF8 /* Pods-ScreamingRacing_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

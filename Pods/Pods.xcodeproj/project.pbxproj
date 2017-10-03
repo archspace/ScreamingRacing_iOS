@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02368A5A22B95E814201CB9DB3063AC0 /* PinLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2C60AAFAF964AB44C54277E3569B60 /* PinLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05F6B5ACCB7FDDACEC2F64F746F831C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		28D3177B4DEEC9CCEBE50D3486C3C0CB /* Pods-ScreamingRacing_iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D48D8E8BA9079D5B849514CD7E40E78A /* Pods-ScreamingRacing_iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		366F63F89634753E364043599BE0F511 /* PinLayoutImpl+Warning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BACBA38185E2BD7949852CC56A4A382 /* PinLayoutImpl+Warning.swift */; };
+		3B008A80D07A942EDF6121FA7E286E26 /* Pods-ScreamingRacing_iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C316F95DF54F368034205E21B497323 /* Pods-ScreamingRacing_iOSTests-dummy.m */; };
+		48610B2742D4C85B3145B27A3B438742 /* UIView+LTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DDA048AA41E5FDE2B84D978DC950E /* UIView+LTR.swift */; };
+		561E4544FAFD3811225D3CF92D849249 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82371BD7FEA7AF1ECE09F12615592F54 /* Coordinates.swift */; };
+		6503A14875D9490BFB0F18CBEFD0628A /* Pods-ScreamingRacing_iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B98811597EFE88957A547E7D6C99EE35 /* Pods-ScreamingRacing_iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68BA1A36F2CCC468267990747E34DB05 /* PinLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7278DE0504B226136EED342E3948B /* PinLayout.swift */; };
+		85AE0BC9D473D4E7C47A3B45AC7CBB94 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66CD6EFD26A2483E5509D52E4D0F97D /* UnitTests.swift */; };
+		8D9983AF397565FCC97F66031AD65145 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8E2621B947F22745CAFE02DCCFAFAEC1 /* Pods-ScreamingRacing_iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41383E5E1DFB62180C406D93B3CB2F40 /* Pods-ScreamingRacing_iOS-dummy.m */; };
+		97190F95DA8E9CBFBFAFB5F285C12CB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9E0FA230D14E4171736F25DA187F455C /* TypesImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AC1C6337677BB106E528FD4978C7DB /* TypesImpl.swift */; };
+		9E9BAC865147CC6931E98739249D6EB5 /* PinLayoutImpl+Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B799982966BD73F689CA54F03BAB7A15 /* PinLayoutImpl+Coordinates.swift */; };
+		B8A9E35224F5E3CB0AACD396D20C5CB3 /* PinLayout+Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8853B67E9B864D7C07CD18CC8A3BA362 /* PinLayout+Filters.swift */; };
+		BEF19B7D1FEBE300BC8D1514C37ADB58 /* PinLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A561D339BCF1FEAD80CD2BF0C4C658 /* PinLayout-dummy.m */; };
+		CA4E4959961ED372D844538B3921A93C /* PinLayoutImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6FCAC31A9CD5EBAF7F4B6CFB7F132E /* PinLayoutImpl.swift */; };
+		E5CA89E694AD8702D07CE7A699C59243 /* PinLayoutImpl+Relative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173605916FCFE397595245718DE2206 /* PinLayoutImpl+Relative.swift */; };
+		F616B67936774357A6330B2E38B142A2 /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E7655FBDCBD8B88EA28CDB8149992 /* Percent.swift */; };
+		FBC9D249893F232F27EAE547D16E3848 /* PinLayoutGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A64CD75F3A9CD2DB3132B44F52BE7E /* PinLayoutGlobals.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8AA122621A43AD138CBEB4784802C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D939599F6C235A4233603BE0CE69226;
+			remoteInfo = PinLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02A561D339BCF1FEAD80CD2BF0C4C658 /* PinLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinLayout-dummy.m"; sourceTree = "<group>"; };
+		0BACBA38185E2BD7949852CC56A4A382 /* PinLayoutImpl+Warning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayoutImpl+Warning.swift"; path = "Sources/PinLayoutImpl+Warning.swift"; sourceTree = "<group>"; };
+		16752C3BCD653D55D7F7A592ACEFBC1D /* Pods-ScreamingRacing_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreamingRacing_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		181DDA048AA41E5FDE2B84D978DC950E /* UIView+LTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+LTR.swift"; path = "Sources/UIView+LTR.swift"; sourceTree = "<group>"; };
+		1B50698957EDF31819A7E1C000DD68BB /* Pods-ScreamingRacing_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreamingRacing_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CF6A7F653F27CEEA85DBF958BA93E03 /* Pods-ScreamingRacing_iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ScreamingRacing_iOS.modulemap"; sourceTree = "<group>"; };
+		2903CF2D43E5A1E4DEE67829440BE0CA /* PinLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinLayout-prefix.pch"; sourceTree = "<group>"; };
+		2EC7278DE0504B226136EED342E3948B /* PinLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinLayout.swift; path = Sources/PinLayout.swift; sourceTree = "<group>"; };
+		316D8E499FA206BD624F02B7D52D805F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35F5E9EFE4ABC784A56518AA2677EDA6 /* Pods-ScreamingRacing_iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreamingRacing_iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		3F2623CBB6B4250B2FF6DDD0F60624CC /* Pods-ScreamingRacing_iOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScreamingRacing_iOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41383E5E1DFB62180C406D93B3CB2F40 /* Pods-ScreamingRacing_iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScreamingRacing_iOS-dummy.m"; sourceTree = "<group>"; };
+		4B2C60AAFAF964AB44C54277E3569B60 /* PinLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinLayout-umbrella.h"; sourceTree = "<group>"; };
+		5547C8125E1C86526B5C69D23BB518D6 /* Pods-ScreamingRacing_iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ScreamingRacing_iOSTests.modulemap"; sourceTree = "<group>"; };
+		56518434081EE9C904CF88E5BC434A51 /* PinLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PinLayout.modulemap; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6A203A3D5F0A56B391F08D0393805FDA /* Pods-ScreamingRacing_iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreamingRacing_iOS-frameworks.sh"; sourceTree = "<group>"; };
+		6B15F300E9773FC2987B4CC7DCBEF994 /* Pods-ScreamingRacing_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreamingRacing_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		6D6FCAC31A9CD5EBAF7F4B6CFB7F132E /* PinLayoutImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinLayoutImpl.swift; path = Sources/PinLayoutImpl.swift; sourceTree = "<group>"; };
+		792E7655FBDCBD8B88EA28CDB8149992 /* Percent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Percent.swift; path = Sources/Percent.swift; sourceTree = "<group>"; };
+		7D4C772B4B6C49787BD1F7BB1D57CAEE /* PinLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PinLayout.framework; path = PinLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8173605916FCFE397595245718DE2206 /* PinLayoutImpl+Relative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayoutImpl+Relative.swift"; path = "Sources/PinLayoutImpl+Relative.swift"; sourceTree = "<group>"; };
+		82371BD7FEA7AF1ECE09F12615592F54 /* Coordinates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coordinates.swift; path = Sources/Coordinates.swift; sourceTree = "<group>"; };
+		8853B67E9B864D7C07CD18CC8A3BA362 /* PinLayout+Filters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayout+Filters.swift"; path = "Sources/PinLayout+Filters.swift"; sourceTree = "<group>"; };
+		912E5D908236E95CD6DC0A0FDB6108A6 /* Pods-ScreamingRacing_iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreamingRacing_iOS-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		949113B37B64B51D814260C5BCFCDD68 /* PinLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinLayout.xcconfig; sourceTree = "<group>"; };
+		97CA737A173293F9DDE0B0809AC39F2E /* Pods_ScreamingRacing_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScreamingRacing_iOSTests.framework; path = "Pods-ScreamingRacing_iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C316F95DF54F368034205E21B497323 /* Pods-ScreamingRacing_iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScreamingRacing_iOSTests-dummy.m"; sourceTree = "<group>"; };
+		A3AC1C6337677BB106E528FD4978C7DB /* TypesImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypesImpl.swift; path = Sources/TypesImpl.swift; sourceTree = "<group>"; };
+		A6C83BC6008E80675DE6CE9B07CC42FA /* Pods-ScreamingRacing_iOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreamingRacing_iOSTests-resources.sh"; sourceTree = "<group>"; };
+		B799982966BD73F689CA54F03BAB7A15 /* PinLayoutImpl+Coordinates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayoutImpl+Coordinates.swift"; path = "Sources/PinLayoutImpl+Coordinates.swift"; sourceTree = "<group>"; };
+		B98811597EFE88957A547E7D6C99EE35 /* Pods-ScreamingRacing_iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScreamingRacing_iOS-umbrella.h"; sourceTree = "<group>"; };
+		BAA87F77BA192C0B5DBFDE3BBFDEBA46 /* Pods-ScreamingRacing_iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScreamingRacing_iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C1B4864BD6DF66CEA7B3853CDABE0E45 /* Pods-ScreamingRacing_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreamingRacing_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D2FDD4378216B830805805B481EEE0DE /* Pods-ScreamingRacing_iOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreamingRacing_iOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D48D8E8BA9079D5B849514CD7E40E78A /* Pods-ScreamingRacing_iOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScreamingRacing_iOSTests-umbrella.h"; sourceTree = "<group>"; };
+		D8FF10BC2FA7A8B09D90786F5C9BB8DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE4F5EA8218703D7D461EEC030D7B02 /* Pods-ScreamingRacing_iOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreamingRacing_iOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		E0A64CD75F3A9CD2DB3132B44F52BE7E /* PinLayoutGlobals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinLayoutGlobals.swift; path = Sources/PinLayoutGlobals.swift; sourceTree = "<group>"; };
+		E17C739A661072729D99F691C31050C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E329B21378A57CC2C734150CB456A642 /* Pods_ScreamingRacing_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScreamingRacing_iOS.framework; path = "Pods-ScreamingRacing_iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66CD6EFD26A2483E5509D52E4D0F97D /* UnitTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnitTests.swift; path = Sources/Impl/UnitTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32C58ED542CCEF661B4655B1B1117F75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97190F95DA8E9CBFBFAFB5F285C12CB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3400A00FBD2C96F8E49ABB74D8718D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9983AF397565FCC97F66031AD65145 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0EEF24FA4D9ED9B7E77B940D2712D62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F6B5ACCB7FDDACEC2F64F746F831C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		649DA7CA6123EA185D625D4ACBCC540F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2250B7A3284FCBE192EBBEC8400F36F /* Pods-ScreamingRacing_iOS */,
+				A0DED0A72C4052E65A2E881C9A973DDE /* Pods-ScreamingRacing_iOSTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7A3A9F13421339744296EC166D0B9616 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B15807AA2EAC1A9D58A31B05828255A2 /* PinLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7A3A9F13421339744296EC166D0B9616 /* Pods */,
+				C4BC1013DEEA8223B3F1B4A0A6FAA758 /* Products */,
+				649DA7CA6123EA185D625D4ACBCC540F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		98DB19A0386BC4549742C62C9DFEF88F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8FF10BC2FA7A8B09D90786F5C9BB8DD /* Info.plist */,
+				56518434081EE9C904CF88E5BC434A51 /* PinLayout.modulemap */,
+				949113B37B64B51D814260C5BCFCDD68 /* PinLayout.xcconfig */,
+				02A561D339BCF1FEAD80CD2BF0C4C658 /* PinLayout-dummy.m */,
+				2903CF2D43E5A1E4DEE67829440BE0CA /* PinLayout-prefix.pch */,
+				4B2C60AAFAF964AB44C54277E3569B60 /* PinLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PinLayout";
+			sourceTree = "<group>";
+		};
+		A0DED0A72C4052E65A2E881C9A973DDE /* Pods-ScreamingRacing_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				316D8E499FA206BD624F02B7D52D805F /* Info.plist */,
+				5547C8125E1C86526B5C69D23BB518D6 /* Pods-ScreamingRacing_iOSTests.modulemap */,
+				3F2623CBB6B4250B2FF6DDD0F60624CC /* Pods-ScreamingRacing_iOSTests-acknowledgements.markdown */,
+				D2FDD4378216B830805805B481EEE0DE /* Pods-ScreamingRacing_iOSTests-acknowledgements.plist */,
+				9C316F95DF54F368034205E21B497323 /* Pods-ScreamingRacing_iOSTests-dummy.m */,
+				DFE4F5EA8218703D7D461EEC030D7B02 /* Pods-ScreamingRacing_iOSTests-frameworks.sh */,
+				A6C83BC6008E80675DE6CE9B07CC42FA /* Pods-ScreamingRacing_iOSTests-resources.sh */,
+				D48D8E8BA9079D5B849514CD7E40E78A /* Pods-ScreamingRacing_iOSTests-umbrella.h */,
+				1B50698957EDF31819A7E1C000DD68BB /* Pods-ScreamingRacing_iOSTests.debug.xcconfig */,
+				16752C3BCD653D55D7F7A592ACEFBC1D /* Pods-ScreamingRacing_iOSTests.release.xcconfig */,
+			);
+			name = "Pods-ScreamingRacing_iOSTests";
+			path = "Target Support Files/Pods-ScreamingRacing_iOSTests";
+			sourceTree = "<group>";
+		};
+		B15807AA2EAC1A9D58A31B05828255A2 /* PinLayout */ = {
+			isa = PBXGroup;
+			children = (
+				82371BD7FEA7AF1ECE09F12615592F54 /* Coordinates.swift */,
+				792E7655FBDCBD8B88EA28CDB8149992 /* Percent.swift */,
+				2EC7278DE0504B226136EED342E3948B /* PinLayout.swift */,
+				8853B67E9B864D7C07CD18CC8A3BA362 /* PinLayout+Filters.swift */,
+				E0A64CD75F3A9CD2DB3132B44F52BE7E /* PinLayoutGlobals.swift */,
+				6D6FCAC31A9CD5EBAF7F4B6CFB7F132E /* PinLayoutImpl.swift */,
+				B799982966BD73F689CA54F03BAB7A15 /* PinLayoutImpl+Coordinates.swift */,
+				8173605916FCFE397595245718DE2206 /* PinLayoutImpl+Relative.swift */,
+				0BACBA38185E2BD7949852CC56A4A382 /* PinLayoutImpl+Warning.swift */,
+				A3AC1C6337677BB106E528FD4978C7DB /* TypesImpl.swift */,
+				181DDA048AA41E5FDE2B84D978DC950E /* UIView+LTR.swift */,
+				E66CD6EFD26A2483E5509D52E4D0F97D /* UnitTests.swift */,
+				98DB19A0386BC4549742C62C9DFEF88F /* Support Files */,
+			);
+			name = PinLayout;
+			path = PinLayout;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4BC1013DEEA8223B3F1B4A0A6FAA758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D4C772B4B6C49787BD1F7BB1D57CAEE /* PinLayout.framework */,
+				E329B21378A57CC2C734150CB456A642 /* Pods_ScreamingRacing_iOS.framework */,
+				97CA737A173293F9DDE0B0809AC39F2E /* Pods_ScreamingRacing_iOSTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E2250B7A3284FCBE192EBBEC8400F36F /* Pods-ScreamingRacing_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E17C739A661072729D99F691C31050C4 /* Info.plist */,
+				1CF6A7F653F27CEEA85DBF958BA93E03 /* Pods-ScreamingRacing_iOS.modulemap */,
+				BAA87F77BA192C0B5DBFDE3BBFDEBA46 /* Pods-ScreamingRacing_iOS-acknowledgements.markdown */,
+				35F5E9EFE4ABC784A56518AA2677EDA6 /* Pods-ScreamingRacing_iOS-acknowledgements.plist */,
+				41383E5E1DFB62180C406D93B3CB2F40 /* Pods-ScreamingRacing_iOS-dummy.m */,
+				6A203A3D5F0A56B391F08D0393805FDA /* Pods-ScreamingRacing_iOS-frameworks.sh */,
+				912E5D908236E95CD6DC0A0FDB6108A6 /* Pods-ScreamingRacing_iOS-resources.sh */,
+				B98811597EFE88957A547E7D6C99EE35 /* Pods-ScreamingRacing_iOS-umbrella.h */,
+				C1B4864BD6DF66CEA7B3853CDABE0E45 /* Pods-ScreamingRacing_iOS.debug.xcconfig */,
+				6B15F300E9773FC2987B4CC7DCBEF994 /* Pods-ScreamingRacing_iOS.release.xcconfig */,
+			);
+			name = "Pods-ScreamingRacing_iOS";
+			path = "Target Support Files/Pods-ScreamingRacing_iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B02AEDA323E9B81F8140045DE1E376B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02368A5A22B95E814201CB9DB3063AC0 /* PinLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D90E939EA4265F381FBA59F0AE304C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6503A14875D9490BFB0F18CBEFD0628A /* Pods-ScreamingRacing_iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2EA783806DD5CC183117A49AF2AA66A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D3177B4DEEC9CCEBE50D3486C3C0CB /* Pods-ScreamingRacing_iOSTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D939599F6C235A4233603BE0CE69226 /* PinLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72C153AB5B0F6B6C003E6E27770A449A /* Build configuration list for PBXNativeTarget "PinLayout" */;
+			buildPhases = (
+				4D0BC8392C64E32B347D1E1B9BDB1A21 /* Sources */,
+				3400A00FBD2C96F8E49ABB74D8718D07 /* Frameworks */,
+				2B02AEDA323E9B81F8140045DE1E376B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinLayout;
+			productName = PinLayout;
+			productReference = 7D4C772B4B6C49787BD1F7BB1D57CAEE /* PinLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		48DA846C7F1604B68B9522A978ABE601 /* Pods-ScreamingRacing_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A165A8784614606BB35F545D65C4694 /* Build configuration list for PBXNativeTarget "Pods-ScreamingRacing_iOS" */;
+			buildPhases = (
+				46F86D93AB339CC3EB6A8520D22CEA76 /* Sources */,
+				A0EEF24FA4D9ED9B7E77B940D2712D62 /* Frameworks */,
+				54D90E939EA4265F381FBA59F0AE304C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E335B729B483AF10FAD82F4E34EE7DC8 /* PBXTargetDependency */,
+			);
+			name = "Pods-ScreamingRacing_iOS";
+			productName = "Pods-ScreamingRacing_iOS";
+			productReference = E329B21378A57CC2C734150CB456A642 /* Pods_ScreamingRacing_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		648AE2D1D61A38E1EF328B649BBA29C6 /* Pods-ScreamingRacing_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4751A6650B21C3E744D6C8E3D312DF55 /* Build configuration list for PBXNativeTarget "Pods-ScreamingRacing_iOSTests" */;
+			buildPhases = (
+				EF30F722D1696B042B3930D3C4367790 /* Sources */,
+				32C58ED542CCEF661B4655B1B1117F75 /* Frameworks */,
+				C2EA783806DD5CC183117A49AF2AA66A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ScreamingRacing_iOSTests";
+			productName = "Pods-ScreamingRacing_iOSTests";
+			productReference = 97CA737A173293F9DDE0B0809AC39F2E /* Pods_ScreamingRacing_iOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C4BC1013DEEA8223B3F1B4A0A6FAA758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D939599F6C235A4233603BE0CE69226 /* PinLayout */,
+				48DA846C7F1604B68B9522A978ABE601 /* Pods-ScreamingRacing_iOS */,
+				648AE2D1D61A38E1EF328B649BBA29C6 /* Pods-ScreamingRacing_iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46F86D93AB339CC3EB6A8520D22CEA76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2621B947F22745CAFE02DCCFAFAEC1 /* Pods-ScreamingRacing_iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0BC8392C64E32B347D1E1B9BDB1A21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561E4544FAFD3811225D3CF92D849249 /* Coordinates.swift in Sources */,
+				F616B67936774357A6330B2E38B142A2 /* Percent.swift in Sources */,
+				B8A9E35224F5E3CB0AACD396D20C5CB3 /* PinLayout+Filters.swift in Sources */,
+				BEF19B7D1FEBE300BC8D1514C37ADB58 /* PinLayout-dummy.m in Sources */,
+				68BA1A36F2CCC468267990747E34DB05 /* PinLayout.swift in Sources */,
+				FBC9D249893F232F27EAE547D16E3848 /* PinLayoutGlobals.swift in Sources */,
+				9E9BAC865147CC6931E98739249D6EB5 /* PinLayoutImpl+Coordinates.swift in Sources */,
+				E5CA89E694AD8702D07CE7A699C59243 /* PinLayoutImpl+Relative.swift in Sources */,
+				366F63F89634753E364043599BE0F511 /* PinLayoutImpl+Warning.swift in Sources */,
+				CA4E4959961ED372D844538B3921A93C /* PinLayoutImpl.swift in Sources */,
+				9E0FA230D14E4171736F25DA187F455C /* TypesImpl.swift in Sources */,
+				48610B2742D4C85B3145B27A3B438742 /* UIView+LTR.swift in Sources */,
+				85AE0BC9D473D4E7C47A3B45AC7CBB94 /* UnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF30F722D1696B042B3930D3C4367790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B008A80D07A942EDF6121FA7E286E26 /* Pods-ScreamingRacing_iOSTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E335B729B483AF10FAD82F4E34EE7DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PinLayout;
+			target = 1D939599F6C235A4233603BE0CE69226 /* PinLayout */;
+			targetProxy = F8AA122621A43AD138CBEB4784802C86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		21D76BCFF596CE1A15DA40BFA13E25AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16752C3BCD653D55D7F7A592ACEFBC1D /* Pods-ScreamingRacing_iOSTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ScreamingRacing_iOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScreamingRacing_iOSTests/Pods-ScreamingRacing_iOSTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ScreamingRacing_iOSTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		382EA37BD69579B66AF1E8045FB8067C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B15F300E9773FC2987B4CC7DCBEF994 /* Pods-ScreamingRacing_iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ScreamingRacing_iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ScreamingRacing_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85C0E4E434BF6548E2B1BCBDCB3B5FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B4864BD6DF66CEA7B3853CDABE0E45 /* Pods-ScreamingRacing_iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ScreamingRacing_iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ScreamingRacing_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8AE91240C7D1283247AF94B4F081901D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B50698957EDF31819A7E1C000DD68BB /* Pods-ScreamingRacing_iOSTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ScreamingRacing_iOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScreamingRacing_iOSTests/Pods-ScreamingRacing_iOSTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ScreamingRacing_iOSTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		927A7F51A8D3F162C569B912F3046802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949113B37B64B51D814260C5BCFCDD68 /* PinLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PinLayout/PinLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PinLayout/PinLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PinLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F611DDD705F57638B52F0E545500177A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949113B37B64B51D814260C5BCFCDD68 /* PinLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PinLayout/PinLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PinLayout/PinLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PinLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4751A6650B21C3E744D6C8E3D312DF55 /* Build configuration list for PBXNativeTarget "Pods-ScreamingRacing_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AE91240C7D1283247AF94B4F081901D /* Debug */,
+				21D76BCFF596CE1A15DA40BFA13E25AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72C153AB5B0F6B6C003E6E27770A449A /* Build configuration list for PBXNativeTarget "PinLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F611DDD705F57638B52F0E545500177A /* Debug */,
+				927A7F51A8D3F162C569B912F3046802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A165A8784614606BB35F545D65C4694 /* Build configuration list for PBXNativeTarget "Pods-ScreamingRacing_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C0E4E434BF6548E2B1BCBDCB3B5FCB /* Debug */,
+				382EA37BD69579B66AF1E8045FB8067C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
