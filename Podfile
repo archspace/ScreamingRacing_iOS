@@ -6,7 +6,6 @@ target 'ScreamingRacing_iOS' do
   use_frameworks!
 
   # Pods for ScreamingRacing_iOS
-    pod 'PinLayout', '~> 1.3.2'
 
   target 'ScreamingRacing_iOSTests' do
     inherit! :search_paths

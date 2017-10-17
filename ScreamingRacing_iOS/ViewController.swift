@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import PinLayout
 
 class ViewController: UIViewController {
     let docUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
@@ -63,8 +62,8 @@ class ViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        recBtn.pin.size(CGSize(width: 100, height: 30)).marginBottom(20).bottomCenter(to: view.anchor.bottomCenter)
-        powLabel.pin.size(CGSize(width: 200, height: 200)).marginTop(60).hCenter()
+        recBtn.frame = CGRect(x: view.bounds.midX - 50, y: view.bounds.maxY - 20 - 30, width: 100, height: 30)
+        powLabel.frame = CGRect(x: view.bounds.midX - 100, y: view.bounds.minY + 60, width: 200, height: 200)
     }
     
     @objc func onRecord(sender:UIButton) {
