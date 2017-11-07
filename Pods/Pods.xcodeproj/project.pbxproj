@@ -3,118 +3,118 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0336C81C40377ACD4433BE6A67F4F3E0 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5133B5876EC4A32DD4EF2F42B96F6165 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		033B6B31DDA7EC12A698D84D1BBA0132 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6683E0ED956013EBCCBD7FD3B3DEE5D9 /* UIView+ChameleonPrivate.m */; };
 		0A61472768C589EBA8445C4B4A39CA9D /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = EC05EF96B70CCA1B44291EE3322DDDEE /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C84C197E78D1EAD9CBA77BC74F0BFA5 /* PinLayoutImpl+Relative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296F9E477E6C49104C8F5B92045607C /* PinLayoutImpl+Relative.swift */; };
-		0E0C596B0CEE61A6444097A95846032D /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = 6867DA196CE619DB5EE1DD2A95DFB954 /* hang.m */; };
-		13EB08239D7611C2B40D1C1D38578CFB /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D723C928472A157C99FABA4B4DDAF /* UIButton+Chameleon.m */; };
+		0DE9B9BA20FE7217DFCCE3F287213889 /* PinLayoutObjCImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCBE2CC47152E3F904F6252F4BA37B /* PinLayoutObjCImpl.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		14054DC3A3D7DFFBA317D33199C717DF /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 93F4366CFE336433220F5F77F1CB5379 /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15C53A851BA128EB328652FCB7EC3BE5 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A630E67747F3D5500D70FC2D2F3444 /* UIColor+ChameleonPrivate.m */; };
-		16433FBF6AF668BE6A886698101A6065 /* UIViewController+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011C10A791A3AAF0074E995E2E4FB4A /* UIViewController+Promise.swift */; };
 		16EE5C06E752577CE8F678180494E75B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
 		1B8A79BA2E643262C801134CD8D95249 /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B120B354F9153073041241C13B91C869 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E00E128412F106885973470569305B9 /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6BC3AAAF948BFAC14F03AA6CD870D /* NSURLSession+AnyPromise.m */; };
-		1EE738CC601621DD7FEA27809B8DED63 /* PinLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28941959C31F55DE4B2AB29E8048871 /* PinLayout.swift */; };
-		2048CFB1ABB9D0FC4F77100FCA9A13E0 /* UIView+LTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7A0CF72E9253959BBA39656E1DE63 /* UIView+LTR.swift */; };
-		206E951F70C6E60F22066700789E92EA /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F067438E22FCD351F5F643A24FB33C4 /* race.swift */; };
-		24B418B6BC098192B5F321422671B8CB /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = FC83F633DB4EB9EE90461DCC16D296F4 /* UIAppearance+Swift.m */; };
+		2391FC2C1182427537A666B9AED5DD7B /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA168267E4399A822B7FBD9CEBF19DE /* Chameleon_.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2702BB8B7430F1CAF6209E1B4CC50315 /* PMKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E87430425E0C15B5CEC5EB9FFB0629 /* PMKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28D3177B4DEEC9CCEBE50D3486C3C0CB /* Pods-ScreamingRacing_iOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D48D8E8BA9079D5B849514CD7E40E78A /* Pods-ScreamingRacing_iOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C186B36BAC73BF5B51AA76FD8A68708 /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35244892196667CF6F5831BE5D8749BD /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DEF5714F0B12CB4886049AA807FBA5F /* PinLayoutGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AB0167C054B5F04321CC11C205C37 /* PinLayoutGlobals.swift */; };
-		2FD7685109E85132D49664A3F7C6C410 /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A35F0549911F681EB7F1D08D1305D1F /* afterlife.swift */; };
-		338732E103C11B090E8A07925732F3F5 /* Zalgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD68046F3F6AC9B1E040D63B6BC6D84C /* Zalgo.swift */; };
+		2C374240A336DC222A3B1B1A521C8461 /* PinLayoutGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083AB0167C054B5F04321CC11C205C37 /* PinLayoutGlobals.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		32A16AC4A39E41576828293BA97F2D5E /* PinLayout+Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B92B7B968F72144035B829323EF144 /* PinLayout+Filters.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		341A0D4AB0D058FD86F89BE622B7CD0A /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADD62E5879FB3D54C6988DD9E519B84 /* PromiseKit-dummy.m */; };
 		35F9C44445E9A411F63880FCF5088441 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
-		361CBFB876FB6DFE744207B554E2D39C /* Promise+AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CA325965423E6E2CABD7876DB4556 /* Promise+AnyPromise.swift */; };
-		3A8013C40BCEC58D888589A25AB7210E /* dispatch_promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4707278A9FDA7FB71D8D1BCBFA196288 /* dispatch_promise.m */; };
-		3AA528A6C74ACB87BC3C01E5A1FD3AFE /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D40C16EB874D381B683BA40769FFA34 /* UIColor+Chameleon.m */; };
+		368591A3FD90B32929FD55A961BBF7E2 /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F1CA497A37F5F01D612D2572F6B40 /* NSNotificationCenter+AnyPromise.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3AA5EEF58120925D4415BBE59E583C0A /* join.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29402D07363BAD7EF50DCC8E695E25DE /* join.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3B008A80D07A942EDF6121FA7E286E26 /* Pods-ScreamingRacing_iOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C316F95DF54F368034205E21B497323 /* Pods-ScreamingRacing_iOSTests-dummy.m */; };
 		3B6FA94F22FF5CFA0147230CE2F2D58B /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF90604F737B486E2A594DC1F7F10F5 /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C1A7460FC8CA2298DA7F9CD0C63470F /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 538965831D8C6B51038131F44DF7E33F /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41FBE5B1804AEF231BB6435118109F69 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = 127AF853C1FA1F81DCACEE0D5F7377B2 /* after.m */; };
-		483C976589E8236A2D63C95F3A59897D /* CALayer+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D98C65FF84AE2B9381871E3A39BC415 /* CALayer+AnyPromise.m */; };
-		48F1470AB6BBF124094CA124D6310677 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7350F284DDB12F277369B40F68A57142 /* UINavigationController+Chameleon.m */; };
-		493F116D2ACFF2D947E6F334FE73C1BC /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DD2C0CE4CCFCFF7B55BF346548FC88 /* UILabel+Chameleon.m */; };
-		4A285635135BCB6F1A2D2F535F364A1C /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F702F7F2788C54BB2A0F99C70B602984 /* Process+Promise.swift */; };
-		4BC4DE59D547D1F2976559D22BCEA825 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD196246B2704EDAFCBE3AEF258689B /* when.swift */; };
+		44ABC4761DFA97BB077E494FE2B3C8FE /* UIViewController+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B88F6BC8EC519B9A6C89CCF1A802EF /* UIViewController+AnyPromise.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		47D3AC143FA4F7616C595312B87DA14E /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5B82E07A84674D89222DF1300AD0F /* AnyPromise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		48D594D1648C421E503B9486DB3F79B3 /* dispatch_promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4707278A9FDA7FB71D8D1BCBFA196288 /* dispatch_promise.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		49AC7400F1E7AC5B0DEC26C53CE3D27F /* PinLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C11E6EFFB1D1F071DE396C688AA6D1 /* PinLayout-dummy.m */; };
 		4BCDE51493C42276BF179A0BF612A1F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		4BEF67145FDD0C9B725B7AE8D0B0C50F /* wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1757BF011D1595C8DEB50E9D68AD47 /* wrap.swift */; };
 		4CA47DA355F9B3E4A3917388D70B9250 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 616B643DFEE32FF95408912C05A69BBE /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E27F2292740DCDC63080D90BD7F7163 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA168267E4399A822B7FBD9CEBF19DE /* Chameleon_.m */; };
 		4EA9C0FDA9D1ECB31840BE213D0E6C59 /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = E421BC07240C5775C3CDF01D85DC25E8 /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57167E2399EFA33FC6E26AED3E2DAFF1 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1479E501F81D4C8914E091C2EEB49F4 /* Promise.swift */; };
-		5A1187889EEFD4E485D3D93D33DF2007 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CF7E0B69A462073A126DCBED77B46 /* State.swift */; };
+		57523BCCBC638330368E0D4403BF92BE /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F067438E22FCD351F5F643A24FB33C4 /* race.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		57EA87B9DEA5EF895BCE2B5577A9B9AB /* Promise+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304811345EBC9020E94D1B5519B7B61 /* Promise+Properties.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5CADD0254C8442F94E51AA85E4310D25 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 64A3A646594FE637FBB69865800A1427 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F73667B10024EBAC3FA0E24087DAF6E /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42870B1C4CA43549C5916F13B84C825E /* UnitTests.swift */; };
+		609CD8575599B3D0DBA6791D5E553A76 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42870B1C4CA43549C5916F13B84C825E /* UnitTests.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		632E6C16E567808083401DE92DDD0616 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
-		66130FDE8FEDDD3AE44E9CB237EC19DD /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 83061529581BC0F022A8257675C46572 /* ChameleonConstants.m */; };
-		6A6B11DB9841A30A683F854625EE8641 /* PMKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021A0AF03F66725A4565B2E7E3446228 /* PMKAlertController.swift */; };
-		6AC5B08BB93E7531DE541DB1142E704A /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A98BD49E4C254946E219BBDFE83623F /* UIView+Promise.swift */; };
+		6CF760BB0952CF96ACB840E74E7387B8 /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAEE059A38BBE1A5A54C66335FAD62 /* when.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6E4166A3B0584781368815228917543A /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD6C9CE01B92751D1A48B3A76ADA836 /* NSTask+AnyPromise.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		70297ABF69F651EAF8E5F968E3811211 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE0324094BEF7AB4D2E144D5E0512CF /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70B5875E135149A2C4EA8399241E1445 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADD62E5879FB3D54C6988DD9E519B84 /* PromiseKit-dummy.m */; };
+		704DBE3B883427ECDF1FC4DA062EB083 /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5D4EAD6D615A4E2933848E8F8221C6 /* Percent.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7230498DCC8F6020F23E7595E2F1E792 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D78D32E203A9A8CBE6C54ADC616AF178 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7284A0307A6FDA553F50A138FAA3580B /* NSTask+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = D73203AC14C07E85E2AA57ACD09800EF /* NSTask+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75DCEBC5C073E323ED3833831C56E0D1 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E237257F9570698FDA3099638180B /* NSNotificationCenter+Promise.swift */; };
+		764686F3DE277F4E7D3497F1E505C5D7 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = 127AF853C1FA1F81DCACEE0D5F7377B2 /* after.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		79680E90847362BE0B032C4A5976E56F /* PinLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28941959C31F55DE4B2AB29E8048871 /* PinLayout.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7A00F0033908770DA569D904BFF77398 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C7DB3B78C4E5A72EA25C408504302 /* UIViewController+Chameleon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7ACBD275F7DCAC8120F3D0F4959FDA33 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AEDE536FC00D04AF3C44E4599D75767 /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E7FBC10F1BA30A6C69D748227BDF55E /* PinLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C11E6EFFB1D1F071DE396C688AA6D1 /* PinLayout-dummy.m */; };
+		7CB52AA27BA3203A81B2ECCABB7DACDA /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 83061529581BC0F022A8257675C46572 /* ChameleonConstants.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7D81BF14882B28AD2EE94CFF4BBDDC3B /* PinLayoutObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED71F82F6072C8C40A0537DAED9D2F /* PinLayoutObjC.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		808342040CBCCF1EF2DCB96BA27344A9 /* PMKQuartzCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9248EA965D8097BC8D44F5CD2ECF7958 /* PMKQuartzCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		844924DA56EE40DE5929095302E22860 /* PinLayoutImpl+Warning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8900A351EF0DBEA120F0AC7F7F71E784 /* PinLayoutImpl+Warning.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		85ADDBF669D5431620672A24A322E021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		86FDB99D986439DA3371633766F430B0 /* GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = A8160E3F94B679C354F3C92C842170CF /* GlobalState.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8841AFA56B00480E598C6FBCC8184A91 /* CALayer+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D98C65FF84AE2B9381871E3A39BC415 /* CALayer+AnyPromise.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8B2906955B48102D92E8EEFBE6E29951 /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FCBDA0D46ACD01E7F8541211DAE29F /* NSObject+Promise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8F33F0B3C2A785E52DA211D10C59EFEE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */; };
+		8F5E933FB48551D22B47A69EE1C20457 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F702F7F2788C54BB2A0F99C70B602984 /* Process+Promise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		91F8779D6BA2D204CCA7A2EA177BBABC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
+		929DA002659B916102C893B30EEBCE45 /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F06FF05F311DF57C0B179DECA139FB2 /* AnyPromise.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		955BB653E775FDE23AEDFC51376B060E /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CF7E0B69A462073A126DCBED77B46 /* State.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		97190F95DA8E9CBFBFAFB5F285C12CB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
 		98848A58CFC189B0A5423873CA0A18F7 /* PMKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F89153A641E99E829DD23EC19882D1 /* PMKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A399E8014173E4B69514FB85041A45C /* PinLayoutImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D631D522B0342656AB1A85BB999A9D9 /* PinLayoutImpl.swift */; };
-		9B1032A0B1B415C9D5EB5410F54E8CC1 /* UIViewController+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B88F6BC8EC519B9A6C89CCF1A802EF /* UIViewController+AnyPromise.m */; };
-		9C5ACFBB4D2350ADF01005DCE15873F0 /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BAEE059A38BBE1A5A54C66335FAD62 /* when.m */; };
-		9E4BFB7CFC09258C22A18B4AB4C331DB /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7D5CF9B4AE83A353E784AD36072D8B /* NSArray+Chameleon.m */; };
-		A622685AEF956078F1CC8748CA32B359 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B5A5EF4DD5FD016B793FF22444D9B3 /* NSURLSession+Promise.swift */; };
-		ABB51F51C9F8E9BF75C3635167887788 /* PinLayoutImpl+Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCF8CC7B8500015AFFD592DD6A977C /* PinLayoutImpl+Coordinates.swift */; };
+		9D5089E0461D748E5EE280DB72DC247F /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A98BD49E4C254946E219BBDFE83623F /* UIView+Promise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A0F37A4491A108FDEFFDAD6B0891284C /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CF31636B1092A72135285AC118B14 /* ChameleonFramework-dummy.m */; };
+		A37611C3C215AA5F2A8BCEC04B638AD8 /* PinLayoutImpl+Relative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2296F9E477E6C49104C8F5B92045607C /* PinLayoutImpl+Relative.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A4C3B1882928615F6052E2626ECC2F45 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB7C2A6E223EAC9D7F5FF7DB04960C5 /* after.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AB458598104C522E4960ECABF9B7D495 /* PMKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021A0AF03F66725A4565B2E7E3446228 /* PMKAlertController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AF244F4923A2AE3ADDB9A047B1413718 /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D27BB5BADEA9EFA6A34847C0CBEFF98 /* fwd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B15C0B9D4A76ED04707EC0E899A1E1E6 /* TypesImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155DAB494F10268A64AA0A410D701BED /* TypesImpl.swift */; };
-		B32C424D23987C12F1DF0561A3F8376A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF0997B21FC4D708C99FC631935C9DA /* Error.swift */; };
+		B4525D646617F93D1726D3F1E44DC485 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = FC83F633DB4EB9EE90461DCC16D296F4 /* UIAppearance+Swift.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B47B9EC2839A37E5290F3C58BBBF8B78 /* TypesImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155DAB494F10268A64AA0A410D701BED /* TypesImpl.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B6589D78879324F75E9B293B44E747D1 /* PinLayoutImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D631D522B0342656AB1A85BB999A9D9 /* PinLayoutImpl.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B689190F9E8A3755C8F201D3170814FB /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 750055E92D2C87954B2BB67616D1CAEB /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA5F493CF8FB2F825F7C8EEE54471BB5 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A67FF1E13284578F0016D4DDDBFDF69 /* UIImage+ChameleonPrivate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BC7F0688B8256FBF7C467493E6BB5169 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC167413F1F7B6E6A33726F04646ECF /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCD86A572B7B90910EE3FBF6B0B96C06 /* Zalgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD68046F3F6AC9B1E040D63B6BC6D84C /* Zalgo.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BD54D3977DB4BC983C34B909EC2A10C5 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E74548C7DE93297DBAEAED42C09BA7 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDB11719734001AF82B681D2D72BB890 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860F59587457F3D1151A848CE93519D0 /* Coordinates.swift */; };
 		C082D72BC2DBD1E4862A8FFFC51B6AC2 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1874AD0850A3D8A975CE844DB4B90D08 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C161366E1AD86419C9F6CCCC4D46FEE0 /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F06FF05F311DF57C0B179DECA139FB2 /* AnyPromise.m */; };
+		C20697F7860DA78613DB1915BA5C7E7E /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DD2C0CE4CCFCFF7B55BF346548FC88 /* UILabel+Chameleon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C2107589BD5F475BE1C5C80E47DE4878 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF0997B21FC4D708C99FC631935C9DA /* Error.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C2A1033BA235D56D8DD28EA6418D985A /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860F59587457F3D1151A848CE93519D0 /* Coordinates.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C355168E9710BDE33AA76B917951FA40 /* URLDataPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458E83C68B91DC22A9B6BCD0A325E92E /* URLDataPromise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C3D9DAB163885779966E1A7902C34C91 /* join.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F34F524469C1FCB6E4CCCD62CDEB23 /* join.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C547137953719CFBC4979DF3B2083A6E /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1553D83604E3054A7A5D46FD8CBFF558 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5E06DAEE5EFC75FD87B9424177150DF /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E998CF64B0B76E96C5FB943B95E8916 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6FF1D264A91730D79EBC15A7DDA2CBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */; };
-		C748FE37CCD81336F5F7939D6816EEC9 /* PinLayout+Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B92B7B968F72144035B829323EF144 /* PinLayout+Filters.swift */; };
+		C8F17207F0AC38BC70F573CB10043202 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6683E0ED956013EBCCBD7FD3B3DEE5D9 /* UIView+ChameleonPrivate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C9B7F2DCBD423E3D7271627344751C43 /* NSURLSession+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 129084B13AA9F2E56CCA0319BB9FF917 /* NSURLSession+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA03F31919D2EB80877B1CA92DB4B024 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */; };
 		CA1F2293A739DCA6069FBD0A087D6A96 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BBC987FDFDDBFE50FC3EAA080E4C0C6 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC76A6C9CA4CCF7A19EF91395F23F150 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A67FF1E13284578F0016D4DDDBFDF69 /* UIImage+ChameleonPrivate.m */; };
-		CCBA99C1A6A6DDA5D3C92DAFD4D596BF /* DispatchQueue+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66142E935AB198721E870A90CE2879E /* DispatchQueue+Promise.swift */; };
-		D2A80658F31D942BA4AF41467690ABAC /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF5B82E07A84674D89222DF1300AD0F /* AnyPromise.swift */; };
+		CA79BDE2D3C3906AE7A52D5A9D5AB425 /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 303318387B74BF98AECE8F66149E823C /* UIView+AnyPromise.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CBD8730D090518A07991CFAC15B65A22 /* Promise+AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6CA325965423E6E2CABD7876DB4556 /* Promise+AnyPromise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CC114E98FEBBC482FD7728FF661AA115 /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = 6867DA196CE619DB5EE1DD2A95DFB954 /* hang.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D25DEA36E5E1AD6310D9B73597813393 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A630E67747F3D5500D70FC2D2F3444 /* UIColor+ChameleonPrivate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D2ED0AF6C6C1EF809C9079E364F7D68F /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = F38B1868A783BEEE28ACAF75AB408B9B /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D454CA4F7B424733E07F74D3926D188B /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FCBDA0D46ACD01E7F8541211DAE29F /* NSObject+Promise.swift */; };
+		D33D3EAC8026CE767702FA258AFC407A /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE6BC3AAAF948BFAC14F03AA6CD870D /* NSURLSession+AnyPromise.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D484C821EE98C3E35CDE39CD64715470 /* PinLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F6EE6D1CCD1AEFF235D85B1B55FA4C /* PinLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE864D4B1FB5B8745375F1B5CCDC7FC6 /* PinLayoutObjCImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCBE2CC47152E3F904F6252F4BA37B /* PinLayoutObjCImpl.swift */; };
-		DECF27D8CB49C236535D7C9D6570712C /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB7C2A6E223EAC9D7F5FF7DB04960C5 /* after.swift */; };
-		E07F383DC169A7AEB892D475EF4DC37D /* PinLayoutImpl+Warning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8900A351EF0DBEA120F0AC7F7F71E784 /* PinLayoutImpl+Warning.swift */; };
+		D82A6486B8E8922A321BE83CB1248809 /* PinLayoutImpl+Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCF8CC7B8500015AFFD592DD6A977C /* PinLayoutImpl+Coordinates.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D8A8EF4DEF1BBBD85B57CD8715EEA5CD /* UIViewController+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011C10A791A3AAF0074E995E2E4FB4A /* UIViewController+Promise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E47B95779147CAAA586DF626035E3569 /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A35F0549911F681EB7F1D08D1305D1F /* afterlife.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E5342C10036B05572173F00E23D6559A /* CALayer+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCE1D9F00444BF761047F934E8B45A3 /* CALayer+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6A6E3D805DDF36D4E197975B82AD00A /* Pods-ScreamingRacing_iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B98811597EFE88957A547E7D6C99EE35 /* Pods-ScreamingRacing_iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E99854605AE4F87CCAA866E86CD0E0E9 /* Promise+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304811345EBC9020E94D1B5519B7B61 /* Promise+Properties.swift */; };
-		E9F59DF5469092E5AB0CECD3C1525C33 /* Percent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5D4EAD6D615A4E2933848E8F8221C6 /* Percent.swift */; };
-		EC33883F8849370A4FE9CC8BDDD080D5 /* join.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F34F524469C1FCB6E4CCCD62CDEB23 /* join.m */; };
+		E6B4053127128F8A9DFD1BC273DB1B3A /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7D5CF9B4AE83A353E784AD36072D8B /* NSArray+Chameleon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E899D41EF3A3C63F666B8C1609301989 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D40C16EB874D381B683BA40769FFA34 /* UIColor+Chameleon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E9414652FD7C6207C59BB1D497B445B0 /* wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1757BF011D1595C8DEB50E9D68AD47 /* wrap.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EBC11718B0A5280125F7207CCE13EADC /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D723C928472A157C99FABA4B4DDAF /* UIButton+Chameleon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		ED462D7CEFE4AEAAD6A614B694809564 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E237257F9570698FDA3099638180B /* NSNotificationCenter+Promise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EE30EDF2FFA21F96EE22187974C7D3B9 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7350F284DDB12F277369B40F68A57142 /* UINavigationController+Chameleon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F16AB235DEE7C3FBC7B8E30E7C96615E /* Pods-ScreamingRacing_iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41383E5E1DFB62180C406D93B3CB2F40 /* Pods-ScreamingRacing_iOS-dummy.m */; };
-		F2B093052F2D586C236AC4ADE84021EA /* join.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29402D07363BAD7EF50DCC8E695E25DE /* join.swift */; };
-		F5FBF6BA2802BDC051BBFF2FB01864C4 /* URLDataPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458E83C68B91DC22A9B6BCD0A325E92E /* URLDataPromise.swift */; };
-		F69DF39DC719AD185D21288AB363AC62 /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F1CA497A37F5F01D612D2572F6B40 /* NSNotificationCenter+AnyPromise.m */; };
+		F70A89A466E91E5FD542D6064A0CC6F4 /* UIView+LTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7A0CF72E9253959BBA39656E1DE63 /* UIView+LTR.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F977B17E5A18EC4F6C806080583E66AF /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A4983B66BE2FD256CABC26B2EF77BB1 /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB48DC5ECBAB973160FC8537433D13B4 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CF31636B1092A72135285AC118B14 /* ChameleonFramework-dummy.m */; };
-		FB56C01C11A56B848616B1ED020263F8 /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD6C9CE01B92751D1A48B3A76ADA836 /* NSTask+AnyPromise.m */; };
-		FB6D49D3E7CF33EDA4DA16B521B6369C /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C7DB3B78C4E5A72EA25C408504302 /* UIViewController+Chameleon.m */; };
-		FB9B81598AF16422AA7495B4C49B3412 /* GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = A8160E3F94B679C354F3C92C842170CF /* GlobalState.m */; };
-		FEA9C9D37DC7F1E45CDB9548CD0BF73A /* PinLayoutObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED71F82F6072C8C40A0537DAED9D2F /* PinLayoutObjC.swift */; };
-		FEFE70F6B97BE4E685D446A3B9BB1EB7 /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 303318387B74BF98AECE8F66149E823C /* UIView+AnyPromise.m */; };
+		F986E10DA94AB2C38C0AE792C0BC8852 /* DispatchQueue+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66142E935AB198721E870A90CE2879E /* DispatchQueue+Promise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F9E787B1F2DFC5C0AFC3DFDFA2DD7A1C /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B5A5EF4DD5FD016B793FF22444D9B3 /* NSURLSession+Promise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FA9FC9C9B8013C519AF449AB15A03A34 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD196246B2704EDAFCBE3AEF258689B /* when.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FB816F9BE302047FE5FB628BB471DED5 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1479E501F81D4C8914E091C2EEB49F4 /* Promise.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,7 +145,7 @@
 		021A0AF03F66725A4565B2E7E3446228 /* PMKAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PMKAlertController.swift; path = Extensions/UIKit/Sources/PMKAlertController.swift; sourceTree = "<group>"; };
 		083AB0167C054B5F04321CC11C205C37 /* PinLayoutGlobals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinLayoutGlobals.swift; path = Sources/PinLayoutGlobals.swift; sourceTree = "<group>"; };
 		0B543BEF638881B0048F6C9AA11413AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11EE55F6F39F7688E038A459F22FCABB /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11EE55F6F39F7688E038A459F22FCABB /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		127AF853C1FA1F81DCACEE0D5F7377B2 /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
 		129084B13AA9F2E56CCA0319BB9FF917 /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
 		1553D83604E3054A7A5D46FD8CBFF558 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
@@ -153,13 +153,13 @@
 		15B5A5EF4DD5FD016B793FF22444D9B3 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
 		16752C3BCD653D55D7F7A592ACEFBC1D /* Pods-ScreamingRacing_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreamingRacing_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		1874AD0850A3D8A975CE844DB4B90D08 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
-		18C89D91FC55010C8B26663811E05550 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PromiseKit.modulemap; sourceTree = "<group>"; };
+		18C89D91FC55010C8B26663811E05550 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PromiseKit.modulemap; sourceTree = "<group>"; };
 		1A67FF1E13284578F0016D4DDDBFDF69 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		1A98BD49E4C254946E219BBDFE83623F /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
 		1B50698957EDF31819A7E1C000DD68BB /* Pods-ScreamingRacing_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreamingRacing_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C1757BF011D1595C8DEB50E9D68AD47 /* wrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wrap.swift; path = Sources/wrap.swift; sourceTree = "<group>"; };
 		1C3C7DB3B78C4E5A72EA25C408504302 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
-		1CF6A7F653F27CEEA85DBF958BA93E03 /* Pods-ScreamingRacing_iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ScreamingRacing_iOS.modulemap"; sourceTree = "<group>"; };
+		1CF6A7F653F27CEEA85DBF958BA93E03 /* Pods-ScreamingRacing_iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ScreamingRacing_iOS.modulemap"; sourceTree = "<group>"; };
 		2296F9E477E6C49104C8F5B92045607C /* PinLayoutImpl+Relative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayoutImpl+Relative.swift"; path = "Sources/PinLayoutImpl+Relative.swift"; sourceTree = "<group>"; };
 		25F89153A641E99E829DD23EC19882D1 /* PMKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKFoundation.h; path = Extensions/Foundation/Sources/PMKFoundation.h; sourceTree = "<group>"; };
 		29402D07363BAD7EF50DCC8E695E25DE /* join.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = join.swift; path = Sources/join.swift; sourceTree = "<group>"; };
@@ -171,12 +171,12 @@
 		2E998CF64B0B76E96C5FB943B95E8916 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
 		2F06FF05F311DF57C0B179DECA139FB2 /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
 		303318387B74BF98AECE8F66149E823C /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
-		3089127436F4AD35FC1CC47D13F1411B /* Pods_ScreamingRacing_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScreamingRacing_iOSTests.framework; path = "Pods-ScreamingRacing_iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3089127436F4AD35FC1CC47D13F1411B /* Pods_ScreamingRacing_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		316D8E499FA206BD624F02B7D52D805F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		35244892196667CF6F5831BE5D8749BD /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
 		35F5E9EFE4ABC784A56518AA2677EDA6 /* Pods-ScreamingRacing_iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreamingRacing_iOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		3875FAB290448A92F43F3F462F6080B1 /* PinLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PinLayout.modulemap; sourceTree = "<group>"; };
+		3875FAB290448A92F43F3F462F6080B1 /* PinLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PinLayout.modulemap; sourceTree = "<group>"; };
 		3A35F0549911F681EB7F1D08D1305D1F /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
 		3A4983B66BE2FD256CABC26B2EF77BB1 /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
 		3DA168267E4399A822B7FBD9CEBF19DE /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
@@ -190,11 +190,11 @@
 		4707278A9FDA7FB71D8D1BCBFA196288 /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
 		4D98C65FF84AE2B9381871E3A39BC415 /* CALayer+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+AnyPromise.m"; path = "Extensions/QuartzCore/Sources/CALayer+AnyPromise.m"; sourceTree = "<group>"; };
 		4EDCBE2CC47152E3F904F6252F4BA37B /* PinLayoutObjCImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinLayoutObjCImpl.swift; path = Sources/ObjectiveC/PinLayoutObjCImpl.swift; sourceTree = "<group>"; };
-		4F67B678FFAACB4BBCADF6B8C12BFE66 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F67B678FFAACB4BBCADF6B8C12BFE66 /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5011C10A791A3AAF0074E995E2E4FB4A /* UIViewController+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewController+Promise.swift"; sourceTree = "<group>"; };
 		5133B5876EC4A32DD4EF2F42B96F6165 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
 		538965831D8C6B51038131F44DF7E33F /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
-		5547C8125E1C86526B5C69D23BB518D6 /* Pods-ScreamingRacing_iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ScreamingRacing_iOSTests.modulemap"; sourceTree = "<group>"; };
+		5547C8125E1C86526B5C69D23BB518D6 /* Pods-ScreamingRacing_iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ScreamingRacing_iOSTests.modulemap"; sourceTree = "<group>"; };
 		57F6EE6D1CCD1AEFF235D85B1B55FA4C /* PinLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinLayout-umbrella.h"; sourceTree = "<group>"; };
 		5AC7A0CF72E9253959BBA39656E1DE63 /* UIView+LTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+LTR.swift"; path = "Sources/UIView+LTR.swift"; sourceTree = "<group>"; };
 		5BBC987FDFDDBFE50FC3EAA080E4C0C6 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
@@ -212,11 +212,11 @@
 		7350F284DDB12F277369B40F68A57142 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
 		750055E92D2C87954B2BB67616D1CAEB /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
 		7628CFD87022D384098FA28F3ACCBE10 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
-		76CEE3DE1F3E2B46F95B0877FAF01236 /* Pods_ScreamingRacing_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScreamingRacing_iOS.framework; path = "Pods-ScreamingRacing_iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CEE3DE1F3E2B46F95B0877FAF01236 /* Pods_ScreamingRacing_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A630E67747F3D5500D70FC2D2F3444 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		7A639CBEDF49AC34309DE1B78CBEE4DC /* PinLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinLayout.xcconfig; sourceTree = "<group>"; };
 		7ADD62E5879FB3D54C6988DD9E519B84 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
-		7C9712008BD1043148F36099A94B6FEF /* PinLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PinLayout.framework; path = PinLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C9712008BD1043148F36099A94B6FEF /* PinLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE0324094BEF7AB4D2E144D5E0512CF /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
 		83061529581BC0F022A8257675C46572 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
 		84B88F6BC8EC519B9A6C89CCF1A802EF /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		8E9D723C928472A157C99FABA4B4DDAF /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
 		912E5D908236E95CD6DC0A0FDB6108A6 /* Pods-ScreamingRacing_iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreamingRacing_iOS-resources.sh"; sourceTree = "<group>"; };
 		9248EA965D8097BC8D44F5CD2ECF7958 /* PMKQuartzCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKQuartzCore.h; path = Extensions/QuartzCore/Sources/PMKQuartzCore.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93F4366CFE336433220F5F77F1CB5379 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
 		98FA887A4CFA315A2B5FAD5E71BF85CF /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
 		9C316F95DF54F368034205E21B497323 /* Pods-ScreamingRacing_iOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScreamingRacing_iOSTests-dummy.m"; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 		BAA87F77BA192C0B5DBFDE3BBFDEBA46 /* Pods-ScreamingRacing_iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScreamingRacing_iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BBE8EBC6D88CC5E22723E0AD83A9B90A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCC167413F1F7B6E6A33726F04646ECF /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		BCF9EF78650961A1A0D7CAEA0F4D1B8D /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		BCF9EF78650961A1A0D7CAEA0F4D1B8D /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
 		BD68046F3F6AC9B1E040D63B6BC6D84C /* Zalgo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zalgo.swift; path = Sources/Zalgo.swift; sourceTree = "<group>"; };
 		BEF90604F737B486E2A594DC1F7F10F5 /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
 		C1B4864BD6DF66CEA7B3853CDABE0E45 /* Pods-ScreamingRacing_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreamingRacing_iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -399,7 +399,6 @@
 				720CE7F9A54EBAE4092DE04D05821590 /* Default */,
 				1254383CD3971ED6D50AFB8728911803 /* Support Files */,
 			);
-			name = ChameleonFramework;
 			path = ChameleonFramework;
 			sourceTree = "<group>";
 		};
@@ -554,7 +553,6 @@
 				5050ECC1A5C03085E97CFF686E624C76 /* Support Files */,
 				7FA99A510CE5D7786173F238E4342C33 /* UIKit */,
 			);
-			name = PromiseKit;
 			path = PromiseKit;
 			sourceTree = "<group>";
 		};
@@ -609,7 +607,6 @@
 				42870B1C4CA43549C5916F13B84C825E /* UnitTests.swift */,
 				CECDC4B278139BF081C06038AF077346 /* Support Files */,
 			);
-			name = PinLayout;
 			path = PinLayout;
 			sourceTree = "<group>";
 		};
@@ -720,7 +717,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 227D326BF65B0DA20DE5AE776FEEF81C /* Build configuration list for PBXNativeTarget "PinLayout" */;
 			buildPhases = (
-				F68DDE079830B1337EDAB0173202E9F6 /* Sources */,
+				F9D7824AE19BA798A7851B0B47DF0C3F /* Sources */,
 				CAAED6478521CD043E94B6BD89E7F907 /* Frameworks */,
 				E6CA2A40A326E213042B92A6C76A8D02 /* Headers */,
 			);
@@ -754,7 +751,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20F92F171610CEDDAF86937C97E37425 /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
 			buildPhases = (
-				B085389184CF3DA13A3872C3F78FF2F3 /* Sources */,
+				B6996796ED0ADED32F8D1E2CF2888CF1 /* Sources */,
 				3C86E1D7CD1DEA99FCFC81586F21A3B5 /* Frameworks */,
 				004302C1F6D2542DDD52753708F70DEC /* Headers */,
 			);
@@ -771,7 +768,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBAAE33702D1A716C381BE0BC3AD2C59 /* Build configuration list for PBXNativeTarget "PromiseKit" */;
 			buildPhases = (
-				5048DDBB51D2294A9BAD50E0AB1D1472 /* Sources */,
+				547B5E962474BD25B1871781DD4D0411 /* Sources */,
 				50BDA7F68BD014678679C523266372C7 /* Frameworks */,
 				2B05727DFC0804DE598D68AB8D50F303 /* Headers */,
 			);
@@ -791,7 +788,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0910;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -823,66 +820,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5048DDBB51D2294A9BAD50E0AB1D1472 /* Sources */ = {
+		547B5E962474BD25B1871781DD4D0411 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41FBE5B1804AEF231BB6435118109F69 /* after.m in Sources */,
-				DECF27D8CB49C236535D7C9D6570712C /* after.swift in Sources */,
-				2FD7685109E85132D49664A3F7C6C410 /* afterlife.swift in Sources */,
-				C161366E1AD86419C9F6CCCC4D46FEE0 /* AnyPromise.m in Sources */,
-				D2A80658F31D942BA4AF41467690ABAC /* AnyPromise.swift in Sources */,
-				483C976589E8236A2D63C95F3A59897D /* CALayer+AnyPromise.m in Sources */,
-				3A8013C40BCEC58D888589A25AB7210E /* dispatch_promise.m in Sources */,
-				CCBA99C1A6A6DDA5D3C92DAFD4D596BF /* DispatchQueue+Promise.swift in Sources */,
-				B32C424D23987C12F1DF0561A3F8376A /* Error.swift in Sources */,
-				FB9B81598AF16422AA7495B4C49B3412 /* GlobalState.m in Sources */,
-				0E0C596B0CEE61A6444097A95846032D /* hang.m in Sources */,
-				EC33883F8849370A4FE9CC8BDDD080D5 /* join.m in Sources */,
-				F2B093052F2D586C236AC4ADE84021EA /* join.swift in Sources */,
-				F69DF39DC719AD185D21288AB363AC62 /* NSNotificationCenter+AnyPromise.m in Sources */,
-				75DCEBC5C073E323ED3833831C56E0D1 /* NSNotificationCenter+Promise.swift in Sources */,
-				D454CA4F7B424733E07F74D3926D188B /* NSObject+Promise.swift in Sources */,
-				FB56C01C11A56B848616B1ED020263F8 /* NSTask+AnyPromise.m in Sources */,
-				1E00E128412F106885973470569305B9 /* NSURLSession+AnyPromise.m in Sources */,
-				A622685AEF956078F1CC8748CA32B359 /* NSURLSession+Promise.swift in Sources */,
-				6A6B11DB9841A30A683F854625EE8641 /* PMKAlertController.swift in Sources */,
-				4A285635135BCB6F1A2D2F535F364A1C /* Process+Promise.swift in Sources */,
-				361CBFB876FB6DFE744207B554E2D39C /* Promise+AnyPromise.swift in Sources */,
-				E99854605AE4F87CCAA866E86CD0E0E9 /* Promise+Properties.swift in Sources */,
-				57167E2399EFA33FC6E26AED3E2DAFF1 /* Promise.swift in Sources */,
-				70B5875E135149A2C4EA8399241E1445 /* PromiseKit-dummy.m in Sources */,
-				206E951F70C6E60F22066700789E92EA /* race.swift in Sources */,
-				5A1187889EEFD4E485D3D93D33DF2007 /* State.swift in Sources */,
-				FEFE70F6B97BE4E685D446A3B9BB1EB7 /* UIView+AnyPromise.m in Sources */,
-				6AC5B08BB93E7531DE541DB1142E704A /* UIView+Promise.swift in Sources */,
-				9B1032A0B1B415C9D5EB5410F54E8CC1 /* UIViewController+AnyPromise.m in Sources */,
-				16433FBF6AF668BE6A886698101A6065 /* UIViewController+Promise.swift in Sources */,
-				F5FBF6BA2802BDC051BBFF2FB01864C4 /* URLDataPromise.swift in Sources */,
-				9C5ACFBB4D2350ADF01005DCE15873F0 /* when.m in Sources */,
-				4BC4DE59D547D1F2976559D22BCEA825 /* when.swift in Sources */,
-				4BEF67145FDD0C9B725B7AE8D0B0C50F /* wrap.swift in Sources */,
-				338732E103C11B090E8A07925732F3F5 /* Zalgo.swift in Sources */,
+				764686F3DE277F4E7D3497F1E505C5D7 /* after.m in Sources */,
+				A4C3B1882928615F6052E2626ECC2F45 /* after.swift in Sources */,
+				E47B95779147CAAA586DF626035E3569 /* afterlife.swift in Sources */,
+				929DA002659B916102C893B30EEBCE45 /* AnyPromise.m in Sources */,
+				47D3AC143FA4F7616C595312B87DA14E /* AnyPromise.swift in Sources */,
+				8841AFA56B00480E598C6FBCC8184A91 /* CALayer+AnyPromise.m in Sources */,
+				48D594D1648C421E503B9486DB3F79B3 /* dispatch_promise.m in Sources */,
+				F986E10DA94AB2C38C0AE792C0BC8852 /* DispatchQueue+Promise.swift in Sources */,
+				C2107589BD5F475BE1C5C80E47DE4878 /* Error.swift in Sources */,
+				86FDB99D986439DA3371633766F430B0 /* GlobalState.m in Sources */,
+				CC114E98FEBBC482FD7728FF661AA115 /* hang.m in Sources */,
+				C3D9DAB163885779966E1A7902C34C91 /* join.m in Sources */,
+				3AA5EEF58120925D4415BBE59E583C0A /* join.swift in Sources */,
+				368591A3FD90B32929FD55A961BBF7E2 /* NSNotificationCenter+AnyPromise.m in Sources */,
+				ED462D7CEFE4AEAAD6A614B694809564 /* NSNotificationCenter+Promise.swift in Sources */,
+				8B2906955B48102D92E8EEFBE6E29951 /* NSObject+Promise.swift in Sources */,
+				6E4166A3B0584781368815228917543A /* NSTask+AnyPromise.m in Sources */,
+				D33D3EAC8026CE767702FA258AFC407A /* NSURLSession+AnyPromise.m in Sources */,
+				F9E787B1F2DFC5C0AFC3DFDFA2DD7A1C /* NSURLSession+Promise.swift in Sources */,
+				AB458598104C522E4960ECABF9B7D495 /* PMKAlertController.swift in Sources */,
+				8F5E933FB48551D22B47A69EE1C20457 /* Process+Promise.swift in Sources */,
+				CBD8730D090518A07991CFAC15B65A22 /* Promise+AnyPromise.swift in Sources */,
+				57EA87B9DEA5EF895BCE2B5577A9B9AB /* Promise+Properties.swift in Sources */,
+				FB816F9BE302047FE5FB628BB471DED5 /* Promise.swift in Sources */,
+				341A0D4AB0D058FD86F89BE622B7CD0A /* PromiseKit-dummy.m in Sources */,
+				57523BCCBC638330368E0D4403BF92BE /* race.swift in Sources */,
+				955BB653E775FDE23AEDFC51376B060E /* State.swift in Sources */,
+				CA79BDE2D3C3906AE7A52D5A9D5AB425 /* UIView+AnyPromise.m in Sources */,
+				9D5089E0461D748E5EE280DB72DC247F /* UIView+Promise.swift in Sources */,
+				44ABC4761DFA97BB077E494FE2B3C8FE /* UIViewController+AnyPromise.m in Sources */,
+				D8A8EF4DEF1BBBD85B57CD8715EEA5CD /* UIViewController+Promise.swift in Sources */,
+				C355168E9710BDE33AA76B917951FA40 /* URLDataPromise.swift in Sources */,
+				6CF760BB0952CF96ACB840E74E7387B8 /* when.m in Sources */,
+				FA9FC9C9B8013C519AF449AB15A03A34 /* when.swift in Sources */,
+				E9414652FD7C6207C59BB1D497B445B0 /* wrap.swift in Sources */,
+				BCD86A572B7B90910EE3FBF6B0B96C06 /* Zalgo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B085389184CF3DA13A3872C3F78FF2F3 /* Sources */ = {
+		B6996796ED0ADED32F8D1E2CF2888CF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E27F2292740DCDC63080D90BD7F7163 /* Chameleon_.m in Sources */,
-				66130FDE8FEDDD3AE44E9CB237EC19DD /* ChameleonConstants.m in Sources */,
-				FB48DC5ECBAB973160FC8537433D13B4 /* ChameleonFramework-dummy.m in Sources */,
-				9E4BFB7CFC09258C22A18B4AB4C331DB /* NSArray+Chameleon.m in Sources */,
-				24B418B6BC098192B5F321422671B8CB /* UIAppearance+Swift.m in Sources */,
-				13EB08239D7611C2B40D1C1D38578CFB /* UIButton+Chameleon.m in Sources */,
-				3AA528A6C74ACB87BC3C01E5A1FD3AFE /* UIColor+Chameleon.m in Sources */,
-				15C53A851BA128EB328652FCB7EC3BE5 /* UIColor+ChameleonPrivate.m in Sources */,
-				CC76A6C9CA4CCF7A19EF91395F23F150 /* UIImage+ChameleonPrivate.m in Sources */,
-				493F116D2ACFF2D947E6F334FE73C1BC /* UILabel+Chameleon.m in Sources */,
-				48F1470AB6BBF124094CA124D6310677 /* UINavigationController+Chameleon.m in Sources */,
-				033B6B31DDA7EC12A698D84D1BBA0132 /* UIView+ChameleonPrivate.m in Sources */,
-				FB6D49D3E7CF33EDA4DA16B521B6369C /* UIViewController+Chameleon.m in Sources */,
+				2391FC2C1182427537A666B9AED5DD7B /* Chameleon_.m in Sources */,
+				7CB52AA27BA3203A81B2ECCABB7DACDA /* ChameleonConstants.m in Sources */,
+				A0F37A4491A108FDEFFDAD6B0891284C /* ChameleonFramework-dummy.m in Sources */,
+				E6B4053127128F8A9DFD1BC273DB1B3A /* NSArray+Chameleon.m in Sources */,
+				B4525D646617F93D1726D3F1E44DC485 /* UIAppearance+Swift.m in Sources */,
+				EBC11718B0A5280125F7207CCE13EADC /* UIButton+Chameleon.m in Sources */,
+				E899D41EF3A3C63F666B8C1609301989 /* UIColor+Chameleon.m in Sources */,
+				D25DEA36E5E1AD6310D9B73597813393 /* UIColor+ChameleonPrivate.m in Sources */,
+				BA5F493CF8FB2F825F7C8EEE54471BB5 /* UIImage+ChameleonPrivate.m in Sources */,
+				C20697F7860DA78613DB1915BA5C7E7E /* UILabel+Chameleon.m in Sources */,
+				EE30EDF2FFA21F96EE22187974C7D3B9 /* UINavigationController+Chameleon.m in Sources */,
+				C8F17207F0AC38BC70F573CB10043202 /* UIView+ChameleonPrivate.m in Sources */,
+				7A00F0033908770DA569D904BFF77398 /* UIViewController+Chameleon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,25 +891,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F68DDE079830B1337EDAB0173202E9F6 /* Sources */ = {
+		F9D7824AE19BA798A7851B0B47DF0C3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDB11719734001AF82B681D2D72BB890 /* Coordinates.swift in Sources */,
-				E9F59DF5469092E5AB0CECD3C1525C33 /* Percent.swift in Sources */,
-				C748FE37CCD81336F5F7939D6816EEC9 /* PinLayout+Filters.swift in Sources */,
-				7E7FBC10F1BA30A6C69D748227BDF55E /* PinLayout-dummy.m in Sources */,
-				1EE738CC601621DD7FEA27809B8DED63 /* PinLayout.swift in Sources */,
-				2DEF5714F0B12CB4886049AA807FBA5F /* PinLayoutGlobals.swift in Sources */,
-				ABB51F51C9F8E9BF75C3635167887788 /* PinLayoutImpl+Coordinates.swift in Sources */,
-				0C84C197E78D1EAD9CBA77BC74F0BFA5 /* PinLayoutImpl+Relative.swift in Sources */,
-				E07F383DC169A7AEB892D475EF4DC37D /* PinLayoutImpl+Warning.swift in Sources */,
-				9A399E8014173E4B69514FB85041A45C /* PinLayoutImpl.swift in Sources */,
-				FEA9C9D37DC7F1E45CDB9548CD0BF73A /* PinLayoutObjC.swift in Sources */,
-				DE864D4B1FB5B8745375F1B5CCDC7FC6 /* PinLayoutObjCImpl.swift in Sources */,
-				B15C0B9D4A76ED04707EC0E899A1E1E6 /* TypesImpl.swift in Sources */,
-				2048CFB1ABB9D0FC4F77100FCA9A13E0 /* UIView+LTR.swift in Sources */,
-				5F73667B10024EBAC3FA0E24087DAF6E /* UnitTests.swift in Sources */,
+				C2A1033BA235D56D8DD28EA6418D985A /* Coordinates.swift in Sources */,
+				704DBE3B883427ECDF1FC4DA062EB083 /* Percent.swift in Sources */,
+				32A16AC4A39E41576828293BA97F2D5E /* PinLayout+Filters.swift in Sources */,
+				49AC7400F1E7AC5B0DEC26C53CE3D27F /* PinLayout-dummy.m in Sources */,
+				79680E90847362BE0B032C4A5976E56F /* PinLayout.swift in Sources */,
+				2C374240A336DC222A3B1B1A521C8461 /* PinLayoutGlobals.swift in Sources */,
+				D82A6486B8E8922A321BE83CB1248809 /* PinLayoutImpl+Coordinates.swift in Sources */,
+				A37611C3C215AA5F2A8BCEC04B638AD8 /* PinLayoutImpl+Relative.swift in Sources */,
+				844924DA56EE40DE5929095302E22860 /* PinLayoutImpl+Warning.swift in Sources */,
+				B6589D78879324F75E9B293B44E747D1 /* PinLayoutImpl.swift in Sources */,
+				7D81BF14882B28AD2EE94CFF4BBDDC3B /* PinLayoutObjC.swift in Sources */,
+				0DE9B9BA20FE7217DFCCE3F287213889 /* PinLayoutObjCImpl.swift in Sources */,
+				B47B9EC2839A37E5290F3C58BBBF8B78 /* TypesImpl.swift in Sources */,
+				F70A89A466E91E5FD542D6064A0CC6F4 /* UIView+LTR.swift in Sources */,
+				609CD8575599B3D0DBA6791D5E553A76 /* UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1212,6 +1209,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
