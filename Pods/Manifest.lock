@@ -1,3 +1,25 @@
-PODFILE CHECKSUM: 24e8c8b526ba64c4e356d50f3982d4c0d3f961da
+PODS:
+  - PinLayout (1.4.2)
+  - PromiseKit (4.5.0):
+    - PromiseKit/Foundation (= 4.5.0)
+    - PromiseKit/QuartzCore (= 4.5.0)
+    - PromiseKit/UIKit (= 4.5.0)
+  - PromiseKit/CorePromise (4.5.0)
+  - PromiseKit/Foundation (4.5.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.5.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.5.0):
+    - PromiseKit/CorePromise
 
-COCOAPODS: 1.2.1
+DEPENDENCIES:
+  - PinLayout (~> 1.4.2)
+  - PromiseKit (~> 4.5.0)
+
+SPEC CHECKSUMS:
+  PinLayout: f903b9b737fd6c051f046ba7de1ad849edbb5d21
+  PromiseKit: 9c1d9f6d7b65e3951a90bea7f407c56972be5d8e
+
+PODFILE CHECKSUM: dd6e40c293c904cf3062033ad727fa659d274735
+
+COCOAPODS: 1.3.1

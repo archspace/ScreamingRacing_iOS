@@ -13,6 +13,7 @@
 		11357B931F8357C20047FBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11357B921F8357C20047FBCC /* Assets.xcassets */; };
 		11357B961F8357C20047FBCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11357B941F8357C20047FBCC /* LaunchScreen.storyboard */; };
 		11357BA11F8357C20047FBCC /* ScreamingRacing_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11357BA01F8357C20047FBCC /* ScreamingRacing_iOSTests.swift */; };
+		11BAD5CB1FB1CEC9007AB5C2 /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAD5CA1FB1CEC8007AB5C2 /* BluetoothService.swift */; };
 		2B1E9EB7EB35D23071290093 /* Pods_ScreamingRacing_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3187CD3B1EB0E4423A24160F /* Pods_ScreamingRacing_iOS.framework */; };
 		F02B7A02C95CE06044F408BC /* Pods_ScreamingRacing_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4B43FC72E53702DA4640AD /* Pods_ScreamingRacing_iOSTests.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		11357B9C1F8357C20047FBCC /* ScreamingRacing_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreamingRacing_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11357BA01F8357C20047FBCC /* ScreamingRacing_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamingRacing_iOSTests.swift; sourceTree = "<group>"; };
 		11357BA21F8357C20047FBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BAD5CA1FB1CEC8007AB5C2 /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
 		22AF241DEB76AB3D8BACA974 /* Pods-ScreamingRacing_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamingRacing_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2B4B43FC72E53702DA4640AD /* Pods_ScreamingRacing_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3187CD3B1EB0E4423A24160F /* Pods_ScreamingRacing_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 		11357B8A1F8357C20047FBCC /* ScreamingRacing_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				11BAD5CC1FB1CED2007AB5C2 /* Service */,
 				11357B8B1F8357C20047FBCC /* AppDelegate.swift */,
 				11357B8D1F8357C20047FBCC /* ViewController.swift */,
 				11357B8F1F8357C20047FBCC /* Main.storyboard */,
@@ -115,6 +118,14 @@
 				11357BA21F8357C20047FBCC /* Info.plist */,
 			);
 			path = ScreamingRacing_iOSTests;
+			sourceTree = "<group>";
+		};
+		11BAD5CC1FB1CED2007AB5C2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				11BAD5CA1FB1CEC8007AB5C2 /* BluetoothService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		CA9212FF177A2827D9CE46F5 /* Pods */ = {
@@ -239,13 +250,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreamingRacing_iOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		41456F7AA7EE984A55466FF4 /* [CP] Copy Pods Resources */ = {
@@ -299,9 +313,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -314,13 +333,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreamingRacing_iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -331,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11357B8E1F8357C20047FBCC /* ViewController.swift in Sources */,
+				11BAD5CB1FB1CEC9007AB5C2 /* BluetoothService.swift in Sources */,
 				11357B8C1F8357C20047FBCC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
