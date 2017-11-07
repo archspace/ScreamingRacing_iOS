@@ -15,6 +15,7 @@
 		119076871FB1DCC200DE9919 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119076861FB1DCC200DE9919 /* ControlViewController.swift */; };
 		1190768B1FB1DE0D00DE9919 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768A1FB1DE0D00DE9919 /* AppColor.swift */; };
 		1190768D1FB1E1CD00DE9919 /* AppMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768C1FB1E1CD00DE9919 /* AppMediator.swift */; };
+		1190768F1FB1E5AB00DE9919 /* SpeedBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768E1FB1E5AB00DE9919 /* SpeedBarView.swift */; };
 		11BAD5CB1FB1CEC9007AB5C2 /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAD5CA1FB1CEC8007AB5C2 /* BluetoothService.swift */; };
 		2B1E9EB7EB35D23071290093 /* Pods_ScreamingRacing_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3187CD3B1EB0E4423A24160F /* Pods_ScreamingRacing_iOS.framework */; };
 		F02B7A02C95CE06044F408BC /* Pods_ScreamingRacing_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4B43FC72E53702DA4640AD /* Pods_ScreamingRacing_iOSTests.framework */; };
@@ -44,6 +45,7 @@
 		119076861FB1DCC200DE9919 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		1190768A1FB1DE0D00DE9919 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		1190768C1FB1E1CD00DE9919 /* AppMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMediator.swift; sourceTree = "<group>"; };
+		1190768E1FB1E5AB00DE9919 /* SpeedBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedBarView.swift; sourceTree = "<group>"; };
 		11BAD5CA1FB1CEC8007AB5C2 /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
 		22AF241DEB76AB3D8BACA974 /* Pods-ScreamingRacing_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamingRacing_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2B4B43FC72E53702DA4640AD /* Pods_ScreamingRacing_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 		119076881FB1DCD200DE9919 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1190768E1FB1E5AB00DE9919 /* SpeedBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,12 +346,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEConicalGradient/AEConicalGradient.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEConicalGradient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
@@ -388,6 +393,7 @@
 				1190768B1FB1DE0D00DE9919 /* AppColor.swift in Sources */,
 				11BAD5CB1FB1CEC9007AB5C2 /* BluetoothService.swift in Sources */,
 				119076871FB1DCC200DE9919 /* ControlViewController.swift in Sources */,
+				1190768F1FB1E5AB00DE9919 /* SpeedBarView.swift in Sources */,
 				11357B8C1F8357C20047FBCC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

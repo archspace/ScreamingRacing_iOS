@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -172,7 +172,7 @@
 		1BA54CDCB56B882CBB14E9260881DBB0 /* PinLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinLayout-dummy.m"; sourceTree = "<group>"; };
 		1BDE509CA92971B918061FFA90250DC9 /* TypesImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypesImpl.swift; path = Sources/TypesImpl.swift; sourceTree = "<group>"; };
 		1CA4AF71B5180255DE02275630FDA28B /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
-		1CF6A7F653F27CEEA85DBF958BA93E03 /* Pods-ScreamingRacing_iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ScreamingRacing_iOS.modulemap"; sourceTree = "<group>"; };
+		1CF6A7F653F27CEEA85DBF958BA93E03 /* Pods-ScreamingRacing_iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ScreamingRacing_iOS.modulemap"; sourceTree = "<group>"; };
 		1D1434E69CE911E11CA641FA5126A5F8 /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
 		1DA11768D8E1DE565D56A7282559663E /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
 		1E78125F3712E269D2040ABA92E2B4C3 /* wrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wrap.swift; path = Sources/wrap.swift; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		27BEBBA12069BE9D72FC34EF6F9952E5 /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
 		29030B1E2153AD0667FC6138743F49DC /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
 		2C3BE31C5667361654054944650D1D8E /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
-		3158B7261125F4A3A1C220803A57A388 /* PinLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PinLayout.framework; path = PinLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3158B7261125F4A3A1C220803A57A388 /* PinLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		316D8E499FA206BD624F02B7D52D805F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31C224604BF9CE1DABCA5C00FB00EC27 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
 		3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
@@ -199,9 +199,9 @@
 		4B22B9318983238D447E99D057200EF8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B8F88A03C33AE37CC3BFAA0545DEE8 /* Zalgo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zalgo.swift; path = Sources/Zalgo.swift; sourceTree = "<group>"; };
 		51908A783927F1DC2B052A6CCA30FD41 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
-		5547C8125E1C86526B5C69D23BB518D6 /* Pods-ScreamingRacing_iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ScreamingRacing_iOSTests.modulemap"; sourceTree = "<group>"; };
+		5547C8125E1C86526B5C69D23BB518D6 /* Pods-ScreamingRacing_iOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ScreamingRacing_iOSTests.modulemap"; sourceTree = "<group>"; };
 		63C2C555F5732F667E1D2A2826AE5583 /* UIView+LTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+LTR.swift"; path = "Sources/UIView+LTR.swift"; sourceTree = "<group>"; };
-		65130377C29515F479F15A1354C6B7A1 /* PinLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PinLayout.modulemap; sourceTree = "<group>"; };
+		65130377C29515F479F15A1354C6B7A1 /* PinLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PinLayout.modulemap; sourceTree = "<group>"; };
 		6A203A3D5F0A56B391F08D0393805FDA /* Pods-ScreamingRacing_iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreamingRacing_iOS-frameworks.sh"; sourceTree = "<group>"; };
 		6A3069F3D05971EBE1BD245C163FC85F /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
 		6B15F300E9773FC2987B4CC7DCBEF994 /* Pods-ScreamingRacing_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreamingRacing_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 		73A923EDCCD344894F72C5F1FAE96415 /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
 		76A82F200A0F10DC5A4212F7089AF982 /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
 		78614033AC68D1799FD305575D2D5645 /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
-		78878223FEAB13168F0C392BB4200961 /* AEConicalGradient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AEConicalGradient.framework; path = AEConicalGradient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78878223FEAB13168F0C392BB4200961 /* AEConicalGradient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEConicalGradient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E21FDB2050346B2326B2790F5C8A74 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
 		7A9DD6ADCA5C1CC84A06BC2913703CD2 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
 		7B87D85CB4093D851CDF3F5D9E93F59B /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		8FD278898089ABA956C351403B8C6854 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		912E5D908236E95CD6DC0A0FDB6108A6 /* Pods-ScreamingRacing_iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreamingRacing_iOS-resources.sh"; sourceTree = "<group>"; };
 		9329847D51903815E24A09004CFC168A /* AEConicalGradient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AEConicalGradient-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94E7D0F0903BF1330DE542E9758567E8 /* AEConicalGradient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AEConicalGradient-dummy.m"; sourceTree = "<group>"; };
 		95660C3ED7514EDCD27D4E7A3008DE25 /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
 		97A40E6685BEFEA779C4DE3F7D84F01E /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/State.swift; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 		9FDA7DD22A9A237051F11EC3976008DF /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
 		9FE909F08D2DF6A32EAC3B942CEFC99A /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
 		A6C83BC6008E80675DE6CE9B07CC42FA /* Pods-ScreamingRacing_iOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreamingRacing_iOSTests-resources.sh"; sourceTree = "<group>"; };
-		AA2C13C78CA0B35DA43A5B15FDDA42B8 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		AA2C13C78CA0B35DA43A5B15FDDA42B8 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
 		AE53CDDC4AAB63C01A3B959B5A4CB415 /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
 		B1D0A6B2C1E696D3348A5FE4433FEAE1 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
 		B8396637974DC28E25D3DB94FD957298 /* PMKAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PMKAlertController.swift; path = Extensions/UIKit/Sources/PMKAlertController.swift; sourceTree = "<group>"; };
@@ -251,18 +251,18 @@
 		B98811597EFE88957A547E7D6C99EE35 /* Pods-ScreamingRacing_iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScreamingRacing_iOS-umbrella.h"; sourceTree = "<group>"; };
 		BAA87F77BA192C0B5DBFDE3BBFDEBA46 /* Pods-ScreamingRacing_iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScreamingRacing_iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BB24EB072229D13F68EEA65EEEC5CBF7 /* PinLayout+Filters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayout+Filters.swift"; path = "Sources/PinLayout+Filters.swift"; sourceTree = "<group>"; };
-		BCA5EB204A5A67159590DCC9C5032C02 /* Pods_ScreamingRacing_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScreamingRacing_iOSTests.framework; path = "Pods-ScreamingRacing_iOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA5EB204A5A67159590DCC9C5032C02 /* Pods_ScreamingRacing_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B4864BD6DF66CEA7B3853CDABE0E45 /* Pods-ScreamingRacing_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreamingRacing_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C2358BF24EA7E4081035DEC66C5613A4 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
 		C23D44B74345173163374F6B3326FFBA /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
-		C283E4F5A29CC11C5D5A4607D52ADB63 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C39A090572AC7B80CC3F78BB3466405A /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PromiseKit.modulemap; sourceTree = "<group>"; };
+		C283E4F5A29CC11C5D5A4607D52ADB63 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39A090572AC7B80CC3F78BB3466405A /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PromiseKit.modulemap; sourceTree = "<group>"; };
 		C5E1A322D0D4C221EA34B72221E75917 /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
 		C9E5735252565FF4352D077CB589EEF8 /* PinLayoutObjCImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinLayoutObjCImpl.swift; path = Sources/ObjectiveC/PinLayoutObjCImpl.swift; sourceTree = "<group>"; };
 		CA3FC81D3C4FE8478CED5D53A287D429 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
 		CC02138383F5F3D3C407FF330321D462 /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
 		CDC2636B73AA068AEA8DE09A94C359FD /* PinLayoutImpl+Coordinates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PinLayoutImpl+Coordinates.swift"; path = "Sources/PinLayoutImpl+Coordinates.swift"; sourceTree = "<group>"; };
-		CE0A6D2208CDA8957576751D55D76843 /* AEConicalGradient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AEConicalGradient.modulemap; sourceTree = "<group>"; };
+		CE0A6D2208CDA8957576751D55D76843 /* AEConicalGradient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AEConicalGradient.modulemap; sourceTree = "<group>"; };
 		CE3CD6C8CD784E675B15FB3C53573246 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
 		CFEB44A1EF580FC70DBB8397BEF7C58D /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
 		D0FE9F9507D9A3C950FEB68B0C4164BA /* ConicalGradientLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConicalGradientLayer.swift; path = Sources/ConicalGradientLayer.swift; sourceTree = "<group>"; };
@@ -271,7 +271,7 @@
 		D98EDBEF501355C6A19B3AD5072162D3 /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
 		D9AF1AFA0A0ACC0D08787F66A1A86C94 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
 		DAF95D3A1ECF3DC5E945894FF4B291FF /* Coordinates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coordinates.swift; path = Sources/Coordinates.swift; sourceTree = "<group>"; };
-		DD30EB88A50B1DBD635F95CE0C4F8FDD /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD30EB88A50B1DBD635F95CE0C4F8FDD /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB1A02FEE321ED1BF0B89C9BD6AA87D /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
 		DF950C852AC89243881429DE7799DAA5 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
 		DFE4F5EA8218703D7D461EEC030D7B02 /* Pods-ScreamingRacing_iOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreamingRacing_iOSTests-frameworks.sh"; sourceTree = "<group>"; };
@@ -290,7 +290,7 @@
 		ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F3DB564AF88FFB7DB621A872854C5AC5 /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
 		F6DFB9CF49FB05101CB805BD75D01B96 /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
-		F795AC6E47FC278C06186A074614C46B /* Pods_ScreamingRacing_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScreamingRacing_iOS.framework; path = "Pods-ScreamingRacing_iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F795AC6E47FC278C06186A074614C46B /* Pods_ScreamingRacing_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80E7345AD7F62C4D38868945EEF2509 /* UIViewController+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewController+Promise.swift"; sourceTree = "<group>"; };
 		F8712E8D85465E93249AA09C548F7092 /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
 		F894FD6337D004860C604562A910D094 /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
@@ -447,7 +447,6 @@
 				39669849D69419A7633B91149D6E14A3 /* UnitTests.swift */,
 				24FD32FCE1E0DB2DA221D4435B2200AD /* Support Files */,
 			);
-			name = PinLayout;
 			path = PinLayout;
 			sourceTree = "<group>";
 		};
@@ -480,7 +479,6 @@
 				D70B595E63253BBBD00FB254189D3D49 /* Default */,
 				6FF7ECB3F91CF9F7FF44E09258B8D998 /* Support Files */,
 			);
-			name = ChameleonFramework;
 			path = ChameleonFramework;
 			sourceTree = "<group>";
 		};
@@ -578,7 +576,6 @@
 				51DEC2256F8459F101B9AF15530F8761 /* Support Files */,
 				85F5584B5755135A3B0163FF0C943687 /* UIKit */,
 			);
-			name = PromiseKit;
 			path = PromiseKit;
 			sourceTree = "<group>";
 		};
@@ -589,7 +586,6 @@
 				0C96FDB70A9EDCEA43DF075C1FD6F5FD /* ConicalGradientView.swift */,
 				3AF2C053F6C36066A339D40028A6834C /* Support Files */,
 			);
-			name = AEConicalGradient;
 			path = AEConicalGradient;
 			sourceTree = "<group>";
 		};
@@ -873,7 +869,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0910;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1279,6 +1275,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
