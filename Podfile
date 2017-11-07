@@ -11,6 +11,7 @@ target 'ScreamingRacing_iOS' do
   pod "PromiseKit", "~>4.5.0"
   pod "PinLayout", "~>1.4.2"
   pod "ChameleonFramework", "~>2.1.0"
+  pod "AEConicalGradient", "~>2.0.0"
 
   target 'ScreamingRacing_iOSTests' do
     inherit! :search_paths
