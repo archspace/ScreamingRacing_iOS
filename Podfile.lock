@@ -1,4 +1,7 @@
 PODS:
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - PinLayout (1.4.2)
   - PromiseKit (4.5.0):
     - PromiseKit/Foundation (= 4.5.0)
@@ -13,13 +16,15 @@ PODS:
     - PromiseKit/CorePromise
 
 DEPENDENCIES:
+  - ChameleonFramework (~> 2.1.0)
   - PinLayout (~> 1.4.2)
   - PromiseKit (~> 4.5.0)
 
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   PinLayout: f903b9b737fd6c051f046ba7de1ad849edbb5d21
   PromiseKit: 9c1d9f6d7b65e3951a90bea7f407c56972be5d8e
 
-PODFILE CHECKSUM: dd6e40c293c904cf3062033ad727fa659d274735
+PODFILE CHECKSUM: 50eb1ad832a506d8e1be176b698039ed72cbcd67
 
 COCOAPODS: 1.3.1
