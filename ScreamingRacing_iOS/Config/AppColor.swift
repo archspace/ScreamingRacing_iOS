@@ -19,5 +19,7 @@ struct AppColor {
     static let ControllGradient4th = UIColor(hexString: "#e7851c")
     static let ControllGradient5th = UIColor(hexString: "#f3365d")
     static let ConnectionStatus = UIColor(hexString: "#878787")
+    static let SpeedballBackgroundCenter = UIColor.black
+    static let SpeedballBackgroundOuter = UIColor(hexString:"#353535")
 }
 

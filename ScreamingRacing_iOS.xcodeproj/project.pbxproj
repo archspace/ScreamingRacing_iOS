@@ -17,6 +17,8 @@
 		1190768D1FB1E1CD00DE9919 /* AppMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768C1FB1E1CD00DE9919 /* AppMediator.swift */; };
 		1190768F1FB1E5AB00DE9919 /* SpeedBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768E1FB1E5AB00DE9919 /* SpeedBarView.swift */; };
 		11BAD5CB1FB1CEC9007AB5C2 /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAD5CA1FB1CEC8007AB5C2 /* BluetoothService.swift */; };
+		11D5A5681FB6F7EC009155D2 /* SoundGyroBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5A5671FB6F7EC009155D2 /* SoundGyroBallView.swift */; };
+		11D5A56A1FB71D06009155D2 /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5A5691FB71D06009155D2 /* GradientLayer.swift */; };
 		2B1E9EB7EB35D23071290093 /* Pods_ScreamingRacing_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3187CD3B1EB0E4423A24160F /* Pods_ScreamingRacing_iOS.framework */; };
 		F02B7A02C95CE06044F408BC /* Pods_ScreamingRacing_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4B43FC72E53702DA4640AD /* Pods_ScreamingRacing_iOSTests.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,8 @@
 		1190768C1FB1E1CD00DE9919 /* AppMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMediator.swift; sourceTree = "<group>"; };
 		1190768E1FB1E5AB00DE9919 /* SpeedBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedBarView.swift; sourceTree = "<group>"; };
 		11BAD5CA1FB1CEC8007AB5C2 /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
+		11D5A5671FB6F7EC009155D2 /* SoundGyroBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundGyroBallView.swift; sourceTree = "<group>"; };
+		11D5A5691FB71D06009155D2 /* GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
 		22AF241DEB76AB3D8BACA974 /* Pods-ScreamingRacing_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreamingRacing_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreamingRacing_iOS/Pods-ScreamingRacing_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2B4B43FC72E53702DA4640AD /* Pods_ScreamingRacing_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3187CD3B1EB0E4423A24160F /* Pods_ScreamingRacing_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreamingRacing_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				1190768E1FB1E5AB00DE9919 /* SpeedBarView.swift */,
+				11D5A5671FB6F7EC009155D2 /* SoundGyroBallView.swift */,
+				11D5A5691FB71D06009155D2 /* GradientLayer.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -390,6 +396,8 @@
 			files = (
 				1190768D1FB1E1CD00DE9919 /* AppMediator.swift in Sources */,
 				11357B8E1F8357C20047FBCC /* ViewController.swift in Sources */,
+				11D5A56A1FB71D06009155D2 /* GradientLayer.swift in Sources */,
+				11D5A5681FB6F7EC009155D2 /* SoundGyroBallView.swift in Sources */,
 				1190768B1FB1DE0D00DE9919 /* AppColor.swift in Sources */,
 				11BAD5CB1FB1CEC9007AB5C2 /* BluetoothService.swift in Sources */,
 				119076871FB1DCC200DE9919 /* ControlViewController.swift in Sources */,

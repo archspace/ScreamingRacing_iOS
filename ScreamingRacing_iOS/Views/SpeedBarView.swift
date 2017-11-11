@@ -29,7 +29,8 @@ class SpeedBarView: UIView {
     }
     
     private func setupUI(){
-        let baseAlpha:CGFloat = 0.1, startAngle = 0.75 * Double.pi, endAngle = 2.25 * Double.pi
+        let baseAlpha:CGFloat = 0.1, startAngle = 0.75 * Double.pi, endAngle = 2.25 * Double.pi,
+         locations = [0.2, 0.4, 0.6, 0.8, 1]
         baseGradient.colors = [
             AppColor.ControllGradient1st!.withAlphaComponent(baseAlpha),
             AppColor.ControllGradient2nd!.withAlphaComponent(baseAlpha),
@@ -39,6 +40,7 @@ class SpeedBarView: UIView {
         ]
         baseGradient.startAngle = startAngle
         baseGradient.endAngle = endAngle
+        baseGradient.locations = locations
         baseGradient.mask = baseMask
         layer.addSublayer(baseGradient)
         
@@ -51,6 +53,7 @@ class SpeedBarView: UIView {
         ]
         gradient.startAngle = startAngle
         gradient.endAngle = endAngle
+        gradient.locations = locations
         gradient.mask = gradientMask
         layer.addSublayer(gradient)
     }
@@ -64,12 +67,12 @@ class SpeedBarView: UIView {
         let path = UIBezierPath(arcCenter: CGPoint(x:bounds.midX, y:bounds.midY), radius: bounds.height * 0.45, startAngle: 0.75 * CGFloat.pi, endAngle: 2.25 * CGFloat.pi, clockwise: true)
         gradientMask.path = path.cgPath
         gradientMask.strokeEnd = 0
-        gradientMask.lineWidth = 5
+        gradientMask.lineWidth = 10
         gradientMask.fillColor = UIColor.clear.cgColor
         gradientMask.strokeColor = UIColor.black.cgColor
         
         baseMask.path = UIBezierPath(cgPath: path.cgPath).cgPath
-        baseMask.lineWidth = 5
+        baseMask.lineWidth = 10
         baseMask.fillColor = UIColor.clear.cgColor
         baseMask.strokeColor = UIColor.black.cgColor
     }
