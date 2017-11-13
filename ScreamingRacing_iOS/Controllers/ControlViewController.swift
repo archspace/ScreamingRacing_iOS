@@ -38,5 +38,6 @@ class ControlViewController: UIViewController {
 
     @objc func testChange(sender:UISlider) {
         speedbar.setSpeedRate(speed: CGFloat(sender.value))
+        gyroball.setSpeedRate(rate: CGFloat(sender.value))
     }
 }
