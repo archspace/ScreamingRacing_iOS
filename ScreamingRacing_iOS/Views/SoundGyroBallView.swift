@@ -87,7 +87,7 @@ class SoundGyroBallView: UIView {
             let step = abs(i - idx), maxSteps = gyroRegion.count
             var hRate = (rate * (CGFloat(maxSteps) - CGFloat(step)) / CGFloat(maxSteps))
             if idx != i {
-                hRate = hRate * CGFloat(arc4random_uniform(100)) / CGFloat(100)
+                hRate = hRate * CGFloat(arc4random_uniform(50) + 50) / CGFloat(100)
             }
             powerbarsUpper[i].strokeEnd = hRate
             powerbarsLower[i].strokeEnd = hRate
