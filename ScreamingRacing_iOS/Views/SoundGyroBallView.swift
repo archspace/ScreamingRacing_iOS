@@ -10,7 +10,7 @@ import UIKit
 
 class SoundGyroBallView: UIView {
     
-    let gyroRegion:[CGFloat] = [0.05, 0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 0.85, 0.95, 1]
+    let gyroRegion:[CGFloat] = [-0.25, -0.2, -0.15, -0.1, -0.05, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3]
     let backgroundGradient = RadialGradientLayer()
     let backgroundMask = CAShapeLayer()
     var powerbarsUpper:[CAShapeLayer] = []

@@ -9,6 +9,7 @@
 import UIKit
 import PinLayout
 import AVFoundation
+import CoreMotion
 
 class ControlViewController: UIViewController {
     
@@ -16,6 +17,8 @@ class ControlViewController: UIViewController {
     let gyroball = SoundGyroBallView()
     let dirButton = UIButton()
     var isBackward = false
+    var rotationRate:CGFloat = 0
+    var speedRate:CGFloat = 0
     
     let docUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
     let recSession = AVAudioSession.sharedInstance()
@@ -23,10 +26,12 @@ class ControlViewController: UIViewController {
     let meterQueue = OperationQueue()
     var filePath:URL?
     
+    let motionManager = CMMotionManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupSession()
+        setupMeters()
         NotificationCenter.default.addObserver(self, selector: #selector(finishRecording), name: .UIApplicationWillResignActive, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(finishRecording), name: .UIApplicationWillTerminate, object: nil)
     }
@@ -62,7 +67,7 @@ class ControlViewController: UIViewController {
         isBackward = true
     }
     
-    func setupSession() {
+    func setupMeters() {
         do {
             try recSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
             try recSession.setActive(true)
@@ -87,9 +92,11 @@ class ControlViewController: UIViewController {
         ]
         do {
             recorder = try AVAudioRecorder(url: filePath!, settings: settings)
-            recorder?.record()
             recorder?.isMeteringEnabled = true
-            
+            recorder?.record()
+            motionManager.gyroUpdateInterval = 0.05
+            motionManager.accelerometerUpdateInterval = 0.05
+            motionManager.startDeviceMotionUpdates()
         }catch {
             print(error)
             return
@@ -107,9 +114,14 @@ class ControlViewController: UIViewController {
                     avgPow = -40
                 }
                 let rate = CGFloat( (avgPow + 40) / 40)
+                let gZ = self.motionManager.deviceMotion?.gravity.z ?? 0,
+                gX = self.motionManager.deviceMotion?.gravity.x ?? 0,
+                rotationY = CGFloat(atan2(gZ, gX)/Double.pi + 0.5)
                 DispatchQueue.main.async {
+                    self.speedRate = rate
                     self.speedbar.setSpeedRate(speed: rate)
-                    self.gyroball.setSpeedRate(rate: rate)
+                    self.rotationRate = rotationY
+                    self.gyroball.setSpeedRate(rate: rate, andGyroRate: rotationY)
                 }
                 usleep(50000)
                 counter += 1
@@ -121,6 +133,7 @@ class ControlViewController: UIViewController {
     @objc func finishRecording() {
         meterQueue.cancelAllOperations()
         recorder?.stop()
+        motionManager.stopDeviceMotionUpdates()
         recorder = nil
         if filePath == nil {
             return
