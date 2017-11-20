@@ -54,6 +54,7 @@ class ControlViewController: UIViewController {
         view.addSubview(listButton)
         listButton.setImage(UIImage(named: "expand_arrow"), for: .normal)
         listButton.tintColor = AppColor.Name
+        listButton.addTarget(self, action: #selector(showList), for: .touchUpInside)
     }
     
     override func viewWillLayoutSubviews() {
@@ -76,6 +77,15 @@ class ControlViewController: UIViewController {
     
     @objc func onDirBackward(){
         isBackward = true
+    }
+    
+    let transitionManager = DropDownTransitionManager(transitionDuration: 0.5, topOffset:55)
+    
+    @objc func showList(){
+        let list = BLEListViewController()
+        list.modalPresentationStyle = .custom
+        list.transitioningDelegate = transitionManager
+        present(list, animated: true, completion: nil)
     }
     
     func setupMeters() {
