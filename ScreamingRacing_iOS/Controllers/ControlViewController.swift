@@ -16,6 +16,8 @@ class ControlViewController: UIViewController {
     let speedbar = SpeedBarView()
     let gyroball = SoundGyroBallView()
     let dirButton = UIButton()
+    let nameLabel = UILabel()
+    let listButton = UIButton()
     var isBackward = false
     var rotationRate:CGFloat = 0
     var speedRate:CGFloat = 0
@@ -45,6 +47,13 @@ class ControlViewController: UIViewController {
         dirButton.addTarget(self, action: #selector(onDirBackward), for: .touchDown)
         dirButton.addTarget(self, action: #selector(onDirForward), for: .touchUpInside)
         dirButton.addTarget(self, action: #selector(onDirForward), for: .touchUpOutside)
+        view.addSubview(nameLabel)
+        nameLabel.text = "-"
+        nameLabel.textAlignment = .center
+        nameLabel.textColor = AppColor.Name
+        view.addSubview(listButton)
+        listButton.setImage(UIImage(named: "expand_arrow"), for: .normal)
+        listButton.tintColor = AppColor.Name
     }
     
     override func viewWillLayoutSubviews() {
@@ -57,6 +66,8 @@ class ControlViewController: UIViewController {
         speedbar.pin.center().width(w * 0.9).height(w * 0.6)
         gyroball.pin.center().width(100).height(100)
         dirButton.pin.width(82).height(82).bottom(42).hCenter()
+        nameLabel.pin.height(25).hCenter().top(30).minWidth(20)
+        listButton.pin.width(20).height(25).right(of: nameLabel, aligned: .center)
     }
 
     @objc func onDirForward(){
@@ -122,6 +133,8 @@ class ControlViewController: UIViewController {
                     self.speedbar.setSpeedRate(speed: rate)
                     self.rotationRate = rotationY
                     self.gyroball.setSpeedRate(rate: rate, andGyroRate: rotationY)
+                    let ballCenterRange = self.speedbar.frame.size.width * 0.3
+                    self.gyroball.pin.hCenter(rotationY * ballCenterRange)
                 }
                 usleep(50000)
                 counter += 1
