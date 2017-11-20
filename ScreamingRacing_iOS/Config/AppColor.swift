@@ -22,5 +22,6 @@ struct AppColor {
     static let SpeedballBackgroundCenter = UIColor.black
     static let SpeedballBackgroundOuter = UIColor(hexString:"#353535")
     static let Soundbar = UIColor(hexString:"#d8d8d8")
+    static let Name=UIColor(hexString:"#21fff7")
 }
 
