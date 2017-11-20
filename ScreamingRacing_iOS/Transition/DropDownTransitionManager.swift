@@ -43,11 +43,15 @@ class DropDownAnimatedTransitioning:NSObject, UIViewControllerAnimatedTransition
             toVC.view.frame = CGRect(x: 0, y: topOffset, width: frame.width, height: h )
             
             finalPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: frame.width, height: h))
-            initPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: frame.width, height: 0))
+            initPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: frame.width, height: 1))
+            toVC.view.layer.mask = mask
         }else {
+        
             initPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: frame.width, height: h))
-            finalPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: frame.width, height: 0))
+            finalPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: frame.width, height: 1))
+            fromVC.view.layer.mask = mask
         }
+        mask.path = finalPath!.cgPath
         
         let maskAnimation = CABasicAnimation(keyPath: "path")
         maskAnimation.fromValue = initPath!.cgPath
@@ -56,16 +60,14 @@ class DropDownAnimatedTransitioning:NSObject, UIViewControllerAnimatedTransition
         maskAnimation.delegate = self
         mask.add(maskAnimation, forKey: "path")
         
-        mask.path = finalPath!.cgPath
-        toVC.view.layer.mask = mask
     }
 }
 
 extension DropDownAnimatedTransitioning: CAAnimationDelegate {
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        transitionContext?.completeTransition(flag)
         transitionContext?.viewController(forKey: .to)?.view.layer.mask = nil
+        transitionContext?.completeTransition(flag)
     }
 }
 
@@ -80,7 +82,7 @@ class DropDownTransitionManager: NSObject, UIViewControllerTransitioningDelegate
     }
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return UIPresentationController(presentedViewController: presented, presenting: presenting)
+        return DimmingLayerPresentationController(presentedViewController: presented, presentingViewController: presenting, dimmingColor: UIColor.clear)
     }
 
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

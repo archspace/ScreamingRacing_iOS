@@ -79,7 +79,7 @@ class ControlViewController: UIViewController {
         isBackward = true
     }
     
-    let transitionManager = DropDownTransitionManager(transitionDuration: 0.5, topOffset:55)
+    let transitionManager = DropDownTransitionManager(transitionDuration: 0.3, topOffset:55)
     
     @objc func showList(){
         let list = BLEListViewController()

@@ -14,6 +14,7 @@
 		11357B961F8357C20047FBCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11357B941F8357C20047FBCC /* LaunchScreen.storyboard */; };
 		11357BA11F8357C20047FBCC /* ScreamingRacing_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11357BA01F8357C20047FBCC /* ScreamingRacing_iOSTests.swift */; };
 		113AC57D1FC2C8CC0011B5B1 /* DropDownTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AC57C1FC2C8CC0011B5B1 /* DropDownTransitionManager.swift */; };
+		113AC57F1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AC57E1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift */; };
 		119076871FB1DCC200DE9919 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119076861FB1DCC200DE9919 /* ControlViewController.swift */; };
 		1190768B1FB1DE0D00DE9919 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768A1FB1DE0D00DE9919 /* AppColor.swift */; };
 		1190768D1FB1E1CD00DE9919 /* AppMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768C1FB1E1CD00DE9919 /* AppMediator.swift */; };
@@ -48,6 +49,7 @@
 		11357BA01F8357C20047FBCC /* ScreamingRacing_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamingRacing_iOSTests.swift; sourceTree = "<group>"; };
 		11357BA21F8357C20047FBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113AC57C1FC2C8CC0011B5B1 /* DropDownTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTransitionManager.swift; sourceTree = "<group>"; };
+		113AC57E1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingLayerPresentationController.swift; sourceTree = "<group>"; };
 		119076861FB1DCC200DE9919 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		1190768A1FB1DE0D00DE9919 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		1190768C1FB1E1CD00DE9919 /* AppMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMediator.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				113AC57C1FC2C8CC0011B5B1 /* DropDownTransitionManager.swift */,
+				113AC57E1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				11D5A56A1FB71D06009155D2 /* GradientLayer.swift in Sources */,
 				11D5A5681FB6F7EC009155D2 /* SoundGyroBallView.swift in Sources */,
 				1190768B1FB1DE0D00DE9919 /* AppColor.swift in Sources */,
+				113AC57F1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift in Sources */,
 				11BAD5CB1FB1CEC9007AB5C2 /* BluetoothService.swift in Sources */,
 				119076871FB1DCC200DE9919 /* ControlViewController.swift in Sources */,
 				113AC57D1FC2C8CC0011B5B1 /* DropDownTransitionManager.swift in Sources */,
