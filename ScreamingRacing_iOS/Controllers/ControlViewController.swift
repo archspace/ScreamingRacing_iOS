@@ -14,7 +14,8 @@ class ControlViewController: UIViewController {
     
     let speedbar = SpeedBarView()
     let gyroball = SoundGyroBallView()
-    let testControl = UISlider()
+    let dirButton = UIButton()
+    var isBackward = false
     
     let docUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
     let recSession = AVAudioSession.sharedInstance()
@@ -26,15 +27,19 @@ class ControlViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupSession()
-        NotificationCenter.default.addObserver(self, selector: #selector(finishRecording), name: NSNotification.Name.UIApplicationWillResignActive, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(finishRecording), name: .UIApplicationWillResignActive, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(finishRecording), name: .UIApplicationWillTerminate, object: nil)
     }
     
     private func setupUI(){
         view.backgroundColor = AppColor.ControllBackground
         view.addSubview(speedbar)
         view.addSubview(gyroball)
-        view.addSubview(testControl)
-        testControl.addTarget(self, action: #selector(testChange(sender:)), for: .valueChanged)
+        view.addSubview(dirButton)
+        dirButton.setImage(UIImage(named: "direction"), for: .normal)
+        dirButton.addTarget(self, action: #selector(onDirBackward), for: .touchDown)
+        dirButton.addTarget(self, action: #selector(onDirForward), for: .touchUpInside)
+        dirButton.addTarget(self, action: #selector(onDirForward), for: .touchUpOutside)
     }
     
     override func viewWillLayoutSubviews() {
@@ -46,12 +51,15 @@ class ControlViewController: UIViewController {
         let w = view.bounds.width
         speedbar.pin.center().width(w * 0.9).height(w * 0.6)
         gyroball.pin.center().width(100).height(100)
-        testControl.pin.width(250).below(of: speedbar, aligned: .center)
+        dirButton.pin.width(82).height(82).bottom(42).hCenter()
     }
 
-    @objc func testChange(sender:UISlider) {
-        speedbar.setSpeedRate(speed: CGFloat(sender.value))
-        gyroball.setSpeedRate(rate: CGFloat(sender.value))
+    @objc func onDirForward(){
+        isBackward = false
+    }
+    
+    @objc func onDirBackward(){
+        isBackward = true
     }
     
     func setupSession() {
@@ -88,6 +96,7 @@ class ControlViewController: UIViewController {
         }
         let opr = BlockOperation()
         opr.addExecutionBlock { [unowned self] () in
+            var counter = 0
             while(!opr.isCancelled){
                 guard let recorder = self.recorder else {
                     return
@@ -103,6 +112,7 @@ class ControlViewController: UIViewController {
                     self.gyroball.setSpeedRate(rate: rate)
                 }
                 usleep(50000)
+                counter += 1
             }
         }
         meterQueue.addOperation(opr)
@@ -112,10 +122,17 @@ class ControlViewController: UIViewController {
         meterQueue.cancelAllOperations()
         recorder?.stop()
         recorder = nil
+        if filePath == nil {
+            return
+        }
+        var err:Error?
         do {
             try FileManager.default.removeItem(at: filePath!)
         }catch {
-            print(error)
+            err = error
+        }
+        if err == nil {
+            filePath = nil
         }
     }
 }
