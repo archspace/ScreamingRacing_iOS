@@ -17,6 +17,7 @@
 		113AC57F1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AC57E1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift */; };
 		1155DE871FC3D8FD004C769A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1155DE891FC3D8FD004C769A /* Localizable.strings */; };
 		1155DE8D1FC3D9D1004C769A /* CheckedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155DE8C1FC3D9D1004C769A /* CheckedTableViewCell.swift */; };
+		1155DE901FC41999004C769A /* CarCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155DE8F1FC41999004C769A /* CarCommands.swift */; };
 		119076871FB1DCC200DE9919 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119076861FB1DCC200DE9919 /* ControlViewController.swift */; };
 		1190768B1FB1DE0D00DE9919 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768A1FB1DE0D00DE9919 /* AppColor.swift */; };
 		1190768D1FB1E1CD00DE9919 /* AppMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768C1FB1E1CD00DE9919 /* AppMediator.swift */; };
@@ -56,6 +57,7 @@
 		1155DE8A1FC3D933004C769A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		1155DE8B1FC3D933004C769A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1155DE8C1FC3D9D1004C769A /* CheckedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedTableViewCell.swift; sourceTree = "<group>"; };
+		1155DE8F1FC41999004C769A /* CarCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCommands.swift; sourceTree = "<group>"; };
 		119076861FB1DCC200DE9919 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		1190768A1FB1DE0D00DE9919 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		1190768C1FB1E1CD00DE9919 /* AppMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMediator.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		11357B8A1F8357C20047FBCC /* ScreamingRacing_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				1155DE8E1FC4161E004C769A /* Model */,
 				113AC57B1FC2C88B0011B5B1 /* Transition */,
 				119076891FB1DDFA00DE9919 /* Config */,
 				119076881FB1DCD200DE9919 /* Views */,
@@ -154,6 +157,14 @@
 				113AC57E1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift */,
 			);
 			path = Transition;
+			sourceTree = "<group>";
+		};
+		1155DE8E1FC4161E004C769A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1155DE8F1FC41999004C769A /* CarCommands.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		119076851FB1DC6500DE9919 /* Controllers */ = {
@@ -427,6 +438,7 @@
 				11D5A5681FB6F7EC009155D2 /* SoundGyroBallView.swift in Sources */,
 				1190768B1FB1DE0D00DE9919 /* AppColor.swift in Sources */,
 				113AC57F1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift in Sources */,
+				1155DE901FC41999004C769A /* CarCommands.swift in Sources */,
 				11BAD5CB1FB1CEC9007AB5C2 /* BluetoothService.swift in Sources */,
 				1155DE8D1FC3D9D1004C769A /* CheckedTableViewCell.swift in Sources */,
 				119076871FB1DCC200DE9919 /* ControlViewController.swift in Sources */,
