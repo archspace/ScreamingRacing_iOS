@@ -203,6 +203,10 @@ class BluetoothPeripheralService:NSObject {
         return pending.promise
     }
     
+    func writeWithoutResponse(data:Data, charateristic:CBCharacteristic) {
+        peripheral.writeValue(data, for: charateristic, type: .withoutResponse)
+    }
+    
     func read(charateristic:CBCharacteristic)->Promise<CBCharacteristic> {
         let pending = Promise<CBCharacteristic>.pending()
         let resolver = PeripheralReadWriteResolver(fulfill: pending.fulfill, reject: pending.reject)

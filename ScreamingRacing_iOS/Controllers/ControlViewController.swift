@@ -32,6 +32,8 @@ class ControlViewController: UIViewController {
             }
         }
     }
+    let CarServiceUUID = CBUUID(string: "FFE0")
+    let CarCharUUID = CBUUID(string: "FFE1")
     
     let docUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
     let recSession = AVAudioSession.sharedInstance()
@@ -78,7 +80,7 @@ class ControlViewController: UIViewController {
         speedbar.pin.center().width(w * 0.9).height(w * 0.6)
         gyroball.pin.center().width(100).height(100)
         dirButton.pin.width(82).height(82).bottom(42).hCenter()
-        nameLabel.pin.height(25).hCenter().top(30).minWidth(20)
+        nameLabel.pin.height(25).hCenter().top(30).minWidth(100)
         listButton.pin.width(20).height(25).right(of: nameLabel, aligned: .center)
     }
 
@@ -143,10 +145,10 @@ class ControlViewController: UIViewController {
                 }
                 recorder.updateMeters()
                 var avgPow = recorder.averagePower(forChannel: 0)
-                if avgPow < -40 {
-                    avgPow = -40
+                if avgPow < -30 {
+                    avgPow = -30
                 }
-                let rate = CGFloat( (avgPow + 40) / 40)
+                let rate = CGFloat( (avgPow + 30) / 30)
                 let gZ = self.motionManager.deviceMotion?.gravity.z ?? 0,
                 gX = self.motionManager.deviceMotion?.gravity.x ?? 0,
                 rotationY = CGFloat(atan2(gZ, gX)/Double.pi + 0.5)
@@ -157,12 +159,27 @@ class ControlViewController: UIViewController {
                     self.gyroball.setSpeedRate(rate: rate, andGyroRate: rotationY)
                     let ballCenterRange = self.speedbar.frame.size.width * 0.3
                     self.gyroball.pin.hCenter(rotationY * ballCenterRange)
+                    if counter % 5 == 0 {
+                        self.sendCommand(powRate: rate, rotationY: rotationY)
+                    }
                 }
                 usleep(50000)
                 counter += 1
             }
         }
         meterQueue.addOperation(opr)
+    }
+    
+    func sendCommand(powRate:CGFloat, rotationY:CGFloat) {
+        guard let pService = peripheralService, let service = pService.peripheral.serviceWithUUID(uuid: CarServiceUUID), let char = service.characteristic(withUUID: CarCharUUID) else {
+            return
+        }
+        let dir:UInt8 = isBackward ? 2 : 1,
+        lSpeed:UInt8 = UInt8(145 * powRate * (rotationY > 0 ? 1 : 1 + rotationY)),
+        rSpeed:UInt8 = UInt8(145 * powRate * (rotationY > 0 ? 1 - rotationY: 1))
+        let cmd = CarCammand(F_LED_L: 1, F_LED_R: 1, M_LED_L: 1, M_LED_R: 1, Motor_L_D: dir, Motor_L_S: lSpeed, Motor_R_D: dir, Motor_R_S: rSpeed)
+        print(cmd.data().hexEncodedString())
+        pService.writeWithoutResponse(data: cmd.data(), charateristic: char)
     }
     
     @objc func finishRecording() {

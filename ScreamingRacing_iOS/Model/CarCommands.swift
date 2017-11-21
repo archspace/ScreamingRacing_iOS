@@ -19,6 +19,11 @@ extension Data {
         self.copyBytes(to: &buffer, from: range)
         return constructor(buffer)
     }
+    
+    func hexEncodedString() -> String {
+        return map { String(format: "%02hhx", $0) }.joined()
+    }
+    
 }
 
 struct CarCammand {
