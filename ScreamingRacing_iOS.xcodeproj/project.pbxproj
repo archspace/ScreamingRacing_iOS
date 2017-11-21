@@ -15,6 +15,8 @@
 		11357BA11F8357C20047FBCC /* ScreamingRacing_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11357BA01F8357C20047FBCC /* ScreamingRacing_iOSTests.swift */; };
 		113AC57D1FC2C8CC0011B5B1 /* DropDownTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AC57C1FC2C8CC0011B5B1 /* DropDownTransitionManager.swift */; };
 		113AC57F1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AC57E1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift */; };
+		1155DE871FC3D8FD004C769A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1155DE891FC3D8FD004C769A /* Localizable.strings */; };
+		1155DE8D1FC3D9D1004C769A /* CheckedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1155DE8C1FC3D9D1004C769A /* CheckedTableViewCell.swift */; };
 		119076871FB1DCC200DE9919 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119076861FB1DCC200DE9919 /* ControlViewController.swift */; };
 		1190768B1FB1DE0D00DE9919 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768A1FB1DE0D00DE9919 /* AppColor.swift */; };
 		1190768D1FB1E1CD00DE9919 /* AppMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1190768C1FB1E1CD00DE9919 /* AppMediator.swift */; };
@@ -50,6 +52,10 @@
 		11357BA21F8357C20047FBCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113AC57C1FC2C8CC0011B5B1 /* DropDownTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTransitionManager.swift; sourceTree = "<group>"; };
 		113AC57E1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmingLayerPresentationController.swift; sourceTree = "<group>"; };
+		1155DE881FC3D8FD004C769A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1155DE8A1FC3D933004C769A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		1155DE8B1FC3D933004C769A /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1155DE8C1FC3D9D1004C769A /* CheckedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckedTableViewCell.swift; sourceTree = "<group>"; };
 		119076861FB1DCC200DE9919 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		1190768A1FB1DE0D00DE9919 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		1190768C1FB1E1CD00DE9919 /* AppMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMediator.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				11357B941F8357C20047FBCC /* LaunchScreen.storyboard */,
 				11357B971F8357C20047FBCC /* Info.plist */,
 				1190768C1FB1E1CD00DE9919 /* AppMediator.swift */,
+				1155DE891FC3D8FD004C769A /* Localizable.strings */,
 			);
 			path = ScreamingRacing_iOS;
 			sourceTree = "<group>";
@@ -164,6 +171,7 @@
 				1190768E1FB1E5AB00DE9919 /* SpeedBarView.swift */,
 				11D5A5671FB6F7EC009155D2 /* SoundGyroBallView.swift */,
 				11D5A5691FB71D06009155D2 /* GradientLayer.swift */,
+				1155DE8C1FC3D9D1004C769A /* CheckedTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 11357B7F1F8357C20047FBCC;
 			productRefGroup = 11357B891F8357C20047FBCC /* Products */;
@@ -285,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11357B961F8357C20047FBCC /* LaunchScreen.storyboard in Resources */,
+				1155DE871FC3D8FD004C769A /* Localizable.strings in Resources */,
 				11357B931F8357C20047FBCC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +428,7 @@
 				1190768B1FB1DE0D00DE9919 /* AppColor.swift in Sources */,
 				113AC57F1FC2F8B10011B5B1 /* DimmingLayerPresentationController.swift in Sources */,
 				11BAD5CB1FB1CEC9007AB5C2 /* BluetoothService.swift in Sources */,
+				1155DE8D1FC3D9D1004C769A /* CheckedTableViewCell.swift in Sources */,
 				119076871FB1DCC200DE9919 /* ControlViewController.swift in Sources */,
 				113AC57D1FC2C8CC0011B5B1 /* DropDownTransitionManager.swift in Sources */,
 				1190768F1FB1E5AB00DE9919 /* SpeedBarView.swift in Sources */,
@@ -449,8 +460,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				11357B951F8357C20047FBCC /* Base */,
+				1155DE8A1FC3D933004C769A /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1155DE891FC3D8FD004C769A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1155DE881FC3D8FD004C769A /* en */,
+				1155DE8B1FC3D933004C769A /* zh-Hant */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -460,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -517,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

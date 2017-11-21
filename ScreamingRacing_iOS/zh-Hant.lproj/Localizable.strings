@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  ScreamingRacing_iOS
+
+  Created by ChangChao-Tang on 2017/11/21.
+  Copyright © 2017年 ChangChao-Tang. All rights reserved.
+*/
+"pCell.not.connected" = "未連線"

@@ -66,7 +66,11 @@ class DropDownAnimatedTransitioning:NSObject, UIViewControllerAnimatedTransition
 extension DropDownAnimatedTransitioning: CAAnimationDelegate {
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        transitionContext?.viewController(forKey: .to)?.view.layer.mask = nil
+        if isPresenting {
+            transitionContext?.viewController(forKey: .to)?.view.layer.mask = nil
+        }else {
+            transitionContext?.viewController(forKey: .from)?.view.layer.mask = nil
+        }
         transitionContext?.completeTransition(flag)
     }
 }

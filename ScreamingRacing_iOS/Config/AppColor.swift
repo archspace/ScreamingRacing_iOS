@@ -25,5 +25,6 @@ struct AppColor {
     static let Name=UIColor(hexString:"#21fff7")
     static let ListGradientStart = UIColor(hexString:"#2a2828")
     static let ListGradientEnd = UIColor(hexString:"#0f436b")
+    static let ConnectCellText = UIColor.white
 }
 
