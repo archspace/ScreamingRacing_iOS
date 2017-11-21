@@ -185,6 +185,9 @@ class BluetoothPeripheralService:NSObject {
         peripheral.discoverCharacteristics( characteristics, for: service)
         let pending = Promise<CBPeripheral>.pending()
         discoverCharacteristicsResolver = (fulfill: pending.fulfill, reject: pending.reject)
+        after(seconds: 10).then{
+            self.discoverCharacteristicsResolver?.reject(BLEError.Timeout)
+        }
         return pending.promise
     }
     
