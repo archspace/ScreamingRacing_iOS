@@ -18,25 +18,35 @@ class BLEListViewController: UIViewController {
     
     let gradientLayer = CAGradientLayer()
     let tableView = UITableView()
-    var centralService: BluetoothCentralService?
+    var centralService:BluetoothCentralService?
     var peripheralService:BluetoothPeripheralService?
     var peripherals = [AvailablePeripheralData]()
     let PeripheralCellReuseId = "PeripheralCellReuseId"
     let CarServiceUUID = CBUUID(string: "FFE0")
+    let CarCharUUID = CBUUID(string: "FFE1")
     weak var delegate:BLEListViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        centralService = BluetoothCentralService(onStateUpdate: {[unowned self] (state) in
-            switch state {
-            case .poweredOn:
-                self.startScan()
-                break
-            default:
-                break
-            }
-        })
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        if appDelegate.centralService == nil || appDelegate.centralService!.centralStatus != .poweredOn {
+            appDelegate.centralService = BluetoothCentralService(onStateUpdate: {[unowned self] (state) in
+                switch state {
+                case .poweredOn:
+                    self.startScan()
+                    break
+                default:
+                    break
+                }
+            })
+            centralService = appDelegate.centralService
+        }else{
+            centralService = appDelegate.centralService
+            self.startScan()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -72,7 +82,10 @@ class BLEListViewController: UIViewController {
         view.layer.insertSublayer(gradientLayer, at: 0)
         tableView.frame = view.bounds
     }
+}
 
+enum DeviceListError:Error {
+    case NoAvailableService
 }
 
 extension BLEListViewController:UITableViewDataSource, UITableViewDelegate {
@@ -85,6 +98,17 @@ extension BLEListViewController:UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: PeripheralCellReuseId, for: indexPath) as! CheckedTableViewCell,
         peripheral = peripherals[indexPath.row]
         cell.titleLabel.text = peripheral.peripheral.name ?? "-"
+        switch peripheral.peripheral.state {
+        case .connecting:
+            cell.status = .checked
+            break
+        case .connected:
+            cell.status = .loading
+            break
+        default:
+            cell.status = .uncheck
+            break
+        }
         return cell
     }
     
@@ -103,15 +127,16 @@ extension BLEListViewController:UITableViewDataSource, UITableViewDelegate {
                 self.peripheralService = BluetoothPeripheralService(p: p)
                 return self.peripheralService!.discoverService(serviceUUIDs: [self.CarServiceUUID])
             })
-            .then(execute: { (p) -> Void in
-                if p.serviceWithUUID(uuid: self.CarServiceUUID) == nil {
-                    service.disconnect(peripheral: p)
-                    cell.status = .uncheck
-                }else{
-                    cell.status = .checked
-                    self.delegate?.bleList(didConnectedToPeripheral: p)
-                    self.dismiss(animated: true, completion: nil)
+            .then(execute: { (p) -> Promise<CBPeripheral> in
+                guard let s = p.serviceWithUUID(uuid: self.CarServiceUUID) else {
+                    throw DeviceListError.NoAvailableService
                 }
+                return self.peripheralService!.discoverCharacteristics(from: s, characteristics: [self.CarCharUUID])
+            })
+            .then(execute: { (p) -> Void in
+                cell.status = .checked
+                self.delegate?.bleList(didConnectedToPeripheral: p)
+                self.dismiss(animated: true, completion: nil)
             })
             .always {
                 tableView.isUserInteractionEnabled = true
