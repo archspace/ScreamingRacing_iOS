@@ -52,7 +52,7 @@ extension CBService {
 }
 
 enum BLEError:Error {
-    case PrevPromiseNotResolved, NoAvailableService, NoAvailableCharateristics
+    case PrevPromiseNotResolved, NoAvailableService, NoAvailableCharateristics, Timeout
 }
 
 
@@ -172,6 +172,9 @@ class BluetoothPeripheralService:NSObject {
         peripheral.discoverServices(serviceUUIDs)
         let pending = Promise<CBPeripheral>.pending()
         discoverServiceResolver = (fulfill: pending.fulfill, reject: pending.reject)
+        after(seconds: 10).then{
+            self.discoverServiceResolver?.reject(BLEError.Timeout)
+        }
         return pending.promise
     }
     
