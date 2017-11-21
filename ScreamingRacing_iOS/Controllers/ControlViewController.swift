@@ -10,6 +10,7 @@ import UIKit
 import PinLayout
 import AVFoundation
 import CoreMotion
+import CoreBluetooth
 
 class ControlViewController: UIViewController {
     
@@ -21,6 +22,16 @@ class ControlViewController: UIViewController {
     var isBackward = false
     var rotationRate:CGFloat = 0
     var speedRate:CGFloat = 0
+    var peripheralService:BluetoothPeripheralService? {
+        didSet{
+            if peripheralService != nil {
+                nameLabel.text = peripheralService?.peripheral.name ?? "-"
+                startRecord()
+            }else {
+                finishRecording()
+            }
+        }
+    }
     
     let docUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
     let recSession = AVAudioSession.sharedInstance()
@@ -58,7 +69,7 @@ class ControlViewController: UIViewController {
     }
     
     override func viewWillLayoutSubviews() {
-        startRecord()
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -85,6 +96,7 @@ class ControlViewController: UIViewController {
         let list = BLEListViewController()
         list.modalPresentationStyle = .custom
         list.transitioningDelegate = transitionManager
+        list.delegate = self
         present(list, animated: true, completion: nil)
     }
     
@@ -170,5 +182,11 @@ class ControlViewController: UIViewController {
         if err == nil {
             filePath = nil
         }
+    }
+}
+
+extension ControlViewController: BLEListViewControllerDelegate{
+    func bleList(didConnectedToPeripheral peripheral: CBPeripheral) {
+        peripheralService = BluetoothPeripheralService(p: peripheral)
     }
 }
